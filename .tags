@@ -1,0 +1,770 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASYMMETRIC_ENCRYPTION_METHOD	./s5/shared/defaults.py	/^ASYMMETRIC_ENCRYPTION_METHOD='rsa-2048'$/;"	v
+Accessors	./s5/plugins/items/__init__.py	/^Accessors = ItemAccessorRegistry(pathlib.Path(__file__).parent,__package__)$/;"	v
+AlgorithmProviderStore	./s5/plugins/__init__.py	/^class AlgorithmProviderStore:$/;"	c
+Algorithms	./s5/plugins/compression/__init__.py	/^Algorithms = CompressionAlgorithmRegistry(pathlib.Path(__file__).parent,__package__)$/;"	v
+Algorithms	./s5/plugins/crypto/__init__.py	/^Algorithms = CryptoAlgorithmRegistry(pathlib.Path(__file__).parent,__package__)$/;"	v
+AsymmetricDecryptor	./s5/plugins/crypto/python_crypto.py	/^    class AsymmetricDecryptor():$/;"	c	class:ElGamalAlgorithm
+AsymmetricDecryptor	./s5/plugins/crypto/python_crypto.py	/^    class AsymmetricDecryptor():$/;"	c	class:RSAAlgorithm
+AsymmetricEncryptor	./s5/plugins/crypto/python_crypto.py	/^    class AsymmetricEncryptor():$/;"	c	class:ElGamalAlgorithm
+AsymmetricEncryptor	./s5/plugins/crypto/python_crypto.py	/^    class AsymmetricEncryptor():$/;"	c	class:RSAAlgorithm
+BaseAccessor	./s5/client/items.py	/^class BaseAccessor:$/;"	c
+BaseRegistry	./s5/plugins/__init__.py	/^class BaseRegistry:$/;"	c
+CLIENT_VERSION	./s5/client/client.py	/^CLIENT_VERSION = 1$/;"	v
+CLIENT_VERSION_STRING	./s5/client/cli.py	/^CLIENT_VERSION_STRING ='S5 Client 1.0.0'$/;"	v
+COMPRESSION_METHOD	./s5/shared/defaults.py	/^COMPRESSION_METHOD='zlib-9'$/;"	v
+CatalogClient	./s5/client/test_client.py	/^    class CatalogClient(client.CatalogMixin,client.S5Client):$/;"	c	class:TestCatalogMixin
+CatalogMixin	./s5/client/client.py	/^class CatalogMixin:$/;"	c
+CliCallbacks	./s5/client/cli.py	/^class CliCallbacks(client.ClientCallbacks):$/;"	c
+CliClient	./s5/client/cli.py	/^class CliClient(CliMixIn,client.S5Client):$/;"	c
+CliMixIn	./s5/client/cli.py	/^class CliMixIn( sync.SyncMixin, filesync.FileSyncMixin, client.CatalogMixin, client.S5Client):$/;"	c
+ClientCallbacks	./s5/client/client.py	/^class ClientCallbacks(metaclass = ABCMeta):$/;"	c
+ClientConnectionHandler	./s5/server/net.py	/^class ClientConnectionHandler(socketserver.BaseRequestHandler):$/;"	c
+ClientDatabase	./s5/client/client.py	/^class ClientDatabase(util.CommonDatabase):$/;"	c
+ClientProtocol	./s5/client/net.py	/^class ClientProtocol(messaging.S5BaseProtocol):$/;"	c
+CommonDatabase	./s5/shared/util.py	/^class CommonDatabase:$/;"	c
+CompressionAlgorithmRegistry	./s5/plugins/compression/__init__.py	/^class CompressionAlgorithmRegistry(BaseRegistry):$/;"	c
+CompressionError	./s5/shared/compression.py	/^class CompressionError(Exception):$/;"	c
+CompressionFactory	./s5/plugins/compression/python_bz2.py	/^class CompressionFactory:$/;"	c
+CompressionFactory	./s5/plugins/compression/python_zlib.py	/^class CompressionFactory:$/;"	c
+Compressor	./s5/plugins/compression/python_bz2.py	/^    class Compressor:$/;"	c	class:CompressionFactory
+Compressor	./s5/plugins/compression/python_zlib.py	/^    class Compressor:$/;"	c	class:CompressionFactory
+CorruptMessage	./s5/shared/messaging.py	/^class CorruptMessage(NetworkError):$/;"	c
+CryptoAlgorithmRegistry	./s5/plugins/crypto/__init__.py	/^class CryptoAlgorithmRegistry(BaseRegistry):$/;"	c
+DEFAULT_COMPRESSION_ALGORITHM	./s5/shared/compression.py	/^DEFAULT_COMPRESSION_ALGORITHM = 'zlib-6'$/;"	v
+DIRECTORY_ITEM_TYPE	./s5/client/filesync.py	/^    DIRECTORY_ITEM_TYPE='%s(%s)'%(ITEM_TYPES.MAP,ITEM_TYPES.FILE)$/;"	v	class:FileSyncMixin
+Decompressor	./s5/plugins/compression/python_bz2.py	/^    class Decompressor:$/;"	c	class:CompressionFactory
+Decompressor	./s5/plugins/compression/python_zlib.py	/^    class Decompressor:$/;"	c	class:CompressionFactory
+DefineMessageType	./s5/shared/messaging.py	/^def DefineMessageType(name, doc, parameters):$/;"	f
+ElGamalAlgorithm	./s5/plugins/crypto/python_crypto.py	/^class ElGamalAlgorithm:$/;"	c
+EncryptionError	./s5/shared/crypto.py	/^class EncryptionError(Exception):$/;"	c
+FILE	./s5/client/defaults.py	/^    FILE="urn:x-s5:file"$/;"	v	class:ITEM_TYPES
+FileAccessor	./s5/plugins/items/core.py	/^    class FileAccessor(BaseAccessor):$/;"	c	function:Register
+FileSyncClient	./s5/client/test_filesync.py	/^class FileSyncClient(filesync.FileSyncMixin,client.IterationMixin,client.S5Client):$/;"	c
+FileSyncMixin	./s5/client/filesync.py	/^class FileSyncMixin(client.CatalogMixin):$/;"	c
+HASH_METHOD	./s5/shared/defaults.py	/^HASH_METHOD='sha256'$/;"	v
+HEADER_FORMAT	./s5/shared/messaging.py	/^    HEADER_FORMAT="% 4s\/% 10X:"$/;"	v	class:S5BaseProtocol
+HEADER_SIZE	./s5/shared/messaging.py	/^    HEADER_SIZE=4+1+10+1$/;"	v	class:S5BaseProtocol
+HashFactory	./s5/plugins/crypto/python_hashlib.py	/^class HashFactory:$/;"	c
+ITEM_ACCESSIBLE_ATTRIBUTES	./s5/client/items.py	/^    ITEM_ACCESSIBLE_ATTRIBUTES = PUBLIC_ITEM_METADATA_FIELDS +  ($/;"	v	class:BaseAccessor
+ITEM_NAME_RE	./s5/client/client.py	/^    ITEM_NAME_RE = re.compile(defaults.ITEM_NAME_RE)$/;"	v	class:CatalogMixin
+ITEM_NAME_RE	./s5/client/defaults.py	/^ITEM_NAME_RE='[^\/]+'$/;"	v
+ITEM_TYPES	./s5/client/defaults.py	/^class ITEM_TYPES:$/;"	c
+Item	./s5/client/items.py	/^class Item:$/;"	c
+ItemAccessorRegistry	./s5/plugins/items/__init__.py	/^class ItemAccessorRegistry(BaseRegistry):$/;"	c
+ItemTestBase	./s5/client/test_items.py	/^class ItemTestBase:$/;"	c
+IterateCatalogClient	./s5/client/test_client.py	/^            client.S5Client):$/;"	c	class:TestIterationMixin
+IterationMixin	./s5/client/client.py	/^class IterationMixin():$/;"	c
+JSON	./s5/client/defaults.py	/^    JSON="urn:x-s5:json"$/;"	v	class:ITEM_TYPES
+JsonAccessor	./s5/plugins/items/core.py	/^    class JsonAccessor(BaseAccessor):$/;"	c	function:Register
+LIST	./s5/client/defaults.py	/^    LIST="urn:x-s5:list"$/;"	v	class:ITEM_TYPES
+ListAccessor	./s5/plugins/items/core.py	/^    class ListAccessor(JsonAccessor,collections.abc.MutableSequence):$/;"	c	function:Register
+MAP	./s5/client/defaults.py	/^    MAP="urn:x-s5:map"$/;"	v	class:ITEM_TYPES
+MAX_BLOB_SIZE	./s5/shared/messaging.py	/^    MAX_BLOB_SIZE=2* (2**30) # DECISION: 2 GB TODO: Guter Wert?$/;"	v	class:S5BaseProtocol
+MAX_MESSAGE_SIZE	./s5/shared/messaging.py	/^    MAX_MESSAGE_SIZE=4096$/;"	v	class:S5BaseProtocol
+MapAccessor	./s5/plugins/items/core.py	/^    class MapAccessor(JsonAccessor,collections.abc.MutableMapping):$/;"	c	function:Register
+MemoryStorage	./s5/client/test_items.py	/^    class MemoryStorage:$/;"	c	class:ItemTestBase
+Message	./s5/shared/messaging.py	/^class Message(collections.abc.Mapping):$/;"	c
+Message	./s5/shared/test_messaging.py	/^    Message=messaging.DefineMessageType("TestMessage","Used only in tests",dict(Param1=dict(required=True,doc="no Doc"),Param2=dict(required=False,doc="no Doc 2")))$/;"	v	class:TestUtil
+MessageParams	./s5/shared/messaging.py	/^MessageParams=($/;"	v
+NetworkError	./s5/shared/messaging.py	/^class NetworkError(Exception):$/;"	c
+NetworkServer	./s5/server/net.py	/^class NetworkServer():$/;"	c
+PBKDF	./s5/shared/defaults.py	/^PBKDF='pbkdf2-1000-hmac-sha1'$/;"	v
+PROTOCOL_VERSION	./s5/shared/messaging.py	/^    PROTOCOL_VERSION=1$/;"	v	class:S5BaseProtocol
+PUBLIC_ITEM_METADATA_FIELDS	./s5/client/items.py	/^PUBLIC_ITEM_METADATA_FIELDS=($/;"	v
+PluginDependencyMissing	./s5/plugins/__init__.py	/^class PluginDependencyMissing(PluginError):$/;"	c
+PluginError	./s5/plugins/__init__.py	/^class PluginError(Exception):$/;"	c
+PullResult	./s5/client/sync.py	/^    PullResult = collections.namedtuple("PullResult",["conflicts","updated","unknown","ignored"])$/;"	v	class:SyncMixin
+PushResult	./s5/client/sync.py	/^    PushResult = collections.namedtuple("PushResult",["conflicts","updated","ignored"])$/;"	v	class:SyncMixin
+PushTreeResult	./s5/client/sync.py	/^    PushTreeResult = collections.namedtuple("PushTreeResult", $/;"	v	class:SyncMixin
+REGISTERED_MESSAGES	./s5/shared/messaging.py	/^    REGISTERED_MESSAGES={}$/;"	v	class:Message
+ROOT_FOLDER	./s5/client/defaults.py	/^ROOT_FOLDER=pathlib.Path(os.path.expanduser('~\/.s5'))$/;"	v
+RSAAlgorithm	./s5/plugins/crypto/python_crypto.py	/^class RSAAlgorithm:$/;"	c
+RecvSocket	./s5/shared/test_messaging.py	/^    class RecvSocket:$/;"	c	class:TestUtil
+Register	./s5/plugins/compression/python_bz2.py	/^def Register(registry):$/;"	f
+Register	./s5/plugins/compression/python_zlib.py	/^def Register(registry):$/;"	f
+Register	./s5/plugins/crypto/null.py	/^def Register(registry):$/;"	f
+Register	./s5/plugins/crypto/python_crypto.py	/^def Register(registry):$/;"	f
+Register	./s5/plugins/crypto/python_hashlib.py	/^def Register(registry):$/;"	f
+Register	./s5/plugins/crypto/python_systemrandom.py	/^def Register(registry):$/;"	f
+Register	./s5/plugins/items/core.py	/^def Register(registry):$/;"	f
+RegisteredAccessor	./s5/plugins/items/core.py	/^    def RegisteredAccessor(cls):$/;"	f	function:Register
+S5BaseProtocol	./s5/shared/messaging.py	/^class S5BaseProtocol:$/;"	c
+S5Client	./s5/client/client.py	/^class S5Client:$/;"	c
+S5Server	./s5/server/server.py	/^class S5Server():$/;"	c
+SERVER_VERSION	./s5/server/server.py	/^SERVER_VERSION = 3$/;"	v
+SERVER_VERSION_STRING	./s5/server/__main__.py	/^SERVER_VERSION_STRING='S5 Server 1.0.0'$/;"	v
+SOCKET_TIMEOUT	./s5/client/defaults.py	/^SOCKET_TIMEOUT=10$/;"	v
+STATE_INITIALIZED	./s5/client/client.py	/^    STATE_INITIALIZED = 1$/;"	v	class:S5Client
+STATE_INITIALIZED	./s5/server/server.py	/^    STATE_INITIALIZED = 1$/;"	v	class:S5Server
+STATE_NEEDS_UPGRADE	./s5/client/client.py	/^    STATE_NEEDS_UPGRADE = 2$/;"	v	class:S5Client
+STATE_NEEDS_UPGRADE	./s5/server/server.py	/^    STATE_NEEDS_UPGRADE = 2$/;"	v	class:S5Server
+STATE_NOT_INITIALIZED	./s5/client/client.py	/^    STATE_NOT_INITIALIZED = 3$/;"	v	class:S5Client
+STATE_NOT_INITIALIZED	./s5/server/server.py	/^    STATE_NOT_INITIALIZED = 3$/;"	v	class:S5Server
+SYMMETRIC_ENCRYPTION_METHOD	./s5/shared/defaults.py	/^SYMMETRIC_ENCRYPTION_METHOD='aes-128-cbc'$/;"	v
+SendSocket	./s5/shared/test_messaging.py	/^    class SendSocket:$/;"	c	class:TestUtil
+SerializeTest	./s5/shared/test_serialize.py	/^class SerializeTest(unittest.TestCase):$/;"	c
+ServerDataBase	./s5/server/server.py	/^class ServerDataBase(util.CommonDatabase):$/;"	c
+ServerMessageHandler	./s5/server/server.py	/^class ServerMessageHandler:$/;"	c
+ServerProtocol	./s5/server/net.py	/^class ServerProtocol(messaging.S5BaseProtocol):$/;"	c
+ShareMixin	./s5/client/share.py	/^class ShareMixin:$/;"	c
+SymmetricDecryptor	./s5/plugins/crypto/null.py	/^    class SymmetricDecryptor:$/;"	c	class:SymmetricEncryptorFactory
+SymmetricDecryptor	./s5/plugins/crypto/python_crypto.py	/^    class SymmetricDecryptor:$/;"	c	class:SymmetricEncryptorFactory
+SymmetricEncryptor	./s5/plugins/crypto/null.py	/^    class SymmetricEncryptor:$/;"	c	class:SymmetricEncryptorFactory
+SymmetricEncryptor	./s5/plugins/crypto/python_crypto.py	/^    class SymmetricEncryptor:$/;"	c	class:SymmetricEncryptorFactory
+SymmetricEncryptorFactory	./s5/plugins/crypto/null.py	/^class SymmetricEncryptorFactory:$/;"	c
+SymmetricEncryptorFactory	./s5/plugins/crypto/python_crypto.py	/^class SymmetricEncryptorFactory:$/;"	c
+SyncClient	./s5/client/test_sync.py	/^class SyncClient(sync.SyncMixin,client.CatalogMixin,client.S5Client):$/;"	c
+SyncMixin	./s5/client/sync.py	/^class SyncMixin(client.IterationMixin):$/;"	c
+TEMP_DIRECTORY	./s5/client/test_cli.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/client/test_client.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/client/test_filesync.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/client/test_sync.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/server/test_server.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/shared/test_compression.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/shared/test_crypto.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TEMP_DIRECTORY	./s5/shared/test_utilcrypto.py	/^TEMP_DIRECTORY = pathlib.Path(tempfile.mkdtemp("Test"+__name__))$/;"	v
+TIME_OUT	./s5/shared/test_messaging.py	/^    TIME_OUT=0.1$/;"	v	class:TestProtocol
+TYPE	./s5/plugins/items/core.py	/^        TYPE=ITEM_TYPES.FILE$/;"	v	class:Register.FileAccessor
+TYPE	./s5/plugins/items/core.py	/^        TYPE=ITEM_TYPES.JSON$/;"	v	class:Register.JsonAccessor
+TYPE	./s5/plugins/items/core.py	/^        TYPE=ITEM_TYPES.LIST$/;"	v	class:Register.ListAccessor
+TYPE	./s5/plugins/items/core.py	/^        TYPE=ITEM_TYPES.MAP$/;"	v	class:Register.MapAccessor
+TYPE_BLOB	./s5/shared/messaging.py	/^    TYPE_BLOB='BLOB'$/;"	v	class:S5BaseProtocol
+TYPE_MESSAGE	./s5/shared/messaging.py	/^    TYPE_MESSAGE='JSON'$/;"	v	class:S5BaseProtocol
+TestCallbacks	./s5/client/test_cli.py	/^class TestCallbacks(client.ClientCallbacks):$/;"	c
+TestCallbacks	./s5/client/test_client.py	/^class TestCallbacks(client.ClientCallbacks):$/;"	c
+TestCatalogMixin	./s5/client/test_client.py	/^class TestCatalogMixin(unittest.TestCase):$/;"	c
+TestCli	./s5/client/test_cli.py	/^class TestCli(unittest.TestCase):$/;"	c
+TestCli	./s5/server/test___main__.py	/^class TestCli (unittest.TestCase):$/;"	c
+TestCliMixin	./s5/client/test_cli.py	/^class TestCliMixin(unittest.TestCase):$/;"	c
+TestClientProtocoll	./s5/client/test_net.py	/^class TestClientProtocoll(unittest.TestCase):$/;"	c
+TestCollectionItem	./s5/client/test_items.py	/^class TestCollectionItem(ItemTestBase,unittest.TestCase):$/;"	c
+TestCompression	./s5/shared/test_compression.py	/^class TestCompression(unittest.TestCase):$/;"	c
+TestCrypto	./s5/shared/test_crypto.py	/^class TestCrypto(unittest.TestCase):$/;"	c
+TestCryptoUtils	./s5/shared/test_utilcrypto.py	/^class TestCryptoUtils(unittest.TestCase):$/;"	c
+TestFileItem	./s5/client/test_items.py	/^class TestFileItem(ItemTestBase,unittest.TestCase):$/;"	c
+TestFsync	./s5/client/test_filesync.py	/^class TestFsync(unittest.TestCase):$/;"	c
+TestItem	./s5/client/test_items.py	/^class TestItem(ItemTestBase,unittest.TestCase):$/;"	c
+TestItemCryptography	./s5/client/test_items.py	/^class TestItemCryptography(ItemTestBase,unittest.TestCase):$/;"	c
+TestIterationMixin	./s5/client/test_client.py	/^class TestIterationMixin(unittest.TestCase):$/;"	c
+TestJSONItem	./s5/client/test_items.py	/^class TestJSONItem(ItemTestBase,unittest.TestCase):$/;"	c
+TestMapItem	./s5/client/test_items.py	/^class TestMapItem(ItemTestBase,unittest.TestCase):$/;"	c
+TestMessageTypes	./s5/shared/test_messaging.py	/^class TestMessageTypes(unittest.TestCase):$/;"	c
+TestProtocol	./s5/shared/test_messaging.py	/^class TestProtocol(unittest.TestCase):$/;"	c
+TestProviders	./s5/shared/test_crypto.py	/^class TestProviders(unittest.TestCase):$/;"	c
+TestS5BaseProtocol	./s5/shared/test_messaging.py	/^class TestS5BaseProtocol(unittest.TestCase):$/;"	c
+TestS5Client	./s5/client/test_client.py	/^class TestS5Client(unittest.TestCase):$/;"	c
+TestS5Server	./s5/server/test_server.py	/^class TestS5Server(unittest.TestCase):$/;"	c
+TestServerMessageHandler	./s5/server/test_server.py	/^class TestServerMessageHandler(unittest.TestCase):$/;"	c
+TestSynchronizationMixIn	./s5/client/test_sync.py	/^class TestSynchronizationMixIn(unittest.TestCase):$/;"	c
+TestTheTestRig	./s5/client/test_items.py	/^class TestTheTestRig(ItemTestBase,unittest.TestCase):$/;"	c
+TestUtil	./s5/shared/test_messaging.py	/^class TestUtil:$/;"	c
+TestUtils	./s5/shared/test_util.py	/^class TestUtils(unittest.TestCase):$/;"	c
+ThreadedTCPServer	./s5/server/net.py	/^class ThreadedTCPServer(socketserver.ThreadingMixIn, socketserver.TCPServer):$/;"	c
+UnexpectedMessage	./s5/shared/messaging.py	/^class UnexpectedMessage(NetworkError):$/;"	c
+VERSIONING_SCHEME	./s5/client/defaults.py	/^VERSIONING_SCHEME="last(10)"$/;"	v
+__call__	./s5/plugins/crypto/python_hashlib.py	/^    def __call__(self):$/;"	m	class:HashFactory	file:
+__delitem__	./s5/plugins/items/core.py	/^        def __delitem__(self, key):$/;"	m	class:Register.ListAccessor	file:
+__delitem__	./s5/plugins/items/core.py	/^        def __delitem__(self, key):$/;"	m	class:Register.MapAccessor	file:
+__getattr__	./s5/client/items.py	/^    def __getattr__(self,attr):$/;"	m	class:BaseAccessor	file:
+__getitem__	./s5/plugins/items/core.py	/^        def __getitem__(self,key):$/;"	m	class:Register.ListAccessor	file:
+__getitem__	./s5/plugins/items/core.py	/^        def __getitem__(self,key):$/;"	m	class:Register.MapAccessor	file:
+__getitem__	./s5/shared/messaging.py	/^    def __getitem__(self,k):$/;"	f	function:DefineMessageType	file:
+__init__	./s5/client/cli.py	/^    def __init__(self,cb):$/;"	m	class:CliMixIn
+__init__	./s5/client/cli.py	/^    def __init__(self,options):$/;"	m	class:CliCallbacks
+__init__	./s5/client/client.py	/^    def __init__(self,callbacks):$/;"	m	class:S5Client
+__init__	./s5/client/client.py	/^    def __init__(self,cb):$/;"	m	class:CatalogMixin
+__init__	./s5/client/items.py	/^    def __init__(self,item):$/;"	m	class:BaseAccessor
+__init__	./s5/client/net.py	/^    def __init__(self,socket):$/;"	m	class:ClientProtocol
+__init__	./s5/client/test_cli.py	/^    def __init__(self,rootDir):$/;"	m	class:TestCallbacks
+__init__	./s5/client/test_client.py	/^    def __init__(self,rootDir):$/;"	m	class:TestCallbacks
+__init__	./s5/client/test_items.py	/^        def __init__(self):$/;"	m	class:ItemTestBase.MemoryStorage
+__init__	./s5/plugins/__init__.py	/^    def __init__(self):$/;"	m	class:AlgorithmProviderStore
+__init__	./s5/plugins/__init__.py	/^    def __init__(self,path,package):$/;"	m	class:BaseRegistry
+__init__	./s5/plugins/compression/__init__.py	/^    def __init__(self,path,package):$/;"	m	class:CompressionAlgorithmRegistry
+__init__	./s5/plugins/compression/python_bz2.py	/^        def __init__(self):$/;"	m	class:CompressionFactory.Decompressor
+__init__	./s5/plugins/compression/python_bz2.py	/^        def __init__(self,level):$/;"	m	class:CompressionFactory.Compressor
+__init__	./s5/plugins/compression/python_bz2.py	/^    def __init__(self,level):$/;"	m	class:CompressionFactory
+__init__	./s5/plugins/compression/python_zlib.py	/^        def __init__(self):$/;"	m	class:CompressionFactory.Decompressor
+__init__	./s5/plugins/compression/python_zlib.py	/^        def __init__(self,level):$/;"	m	class:CompressionFactory.Compressor
+__init__	./s5/plugins/compression/python_zlib.py	/^    def __init__(self,level):$/;"	m	class:CompressionFactory
+__init__	./s5/plugins/crypto/__init__.py	/^    def __init__(self,path,package):$/;"	m	class:CryptoAlgorithmRegistry
+__init__	./s5/plugins/crypto/null.py	/^        def __init__(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+__init__	./s5/plugins/crypto/null.py	/^        def __init__(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^        def __init__(self,cipher):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^        def __init__(self,cipher):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^        def __init__(self,key):$/;"	m	class:ElGamalAlgorithm.AsymmetricDecryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^        def __init__(self,key):$/;"	m	class:ElGamalAlgorithm.AsymmetricEncryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^        def __init__(self,key):$/;"	m	class:RSAAlgorithm.AsymmetricDecryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^        def __init__(self,key):$/;"	m	class:RSAAlgorithm.AsymmetricEncryptor
+__init__	./s5/plugins/crypto/python_crypto.py	/^    def __init__(self,algorithm,mode,keysize):$/;"	m	class:SymmetricEncryptorFactory
+__init__	./s5/plugins/crypto/python_crypto.py	/^    def __init__(self,keyBits):$/;"	m	class:ElGamalAlgorithm
+__init__	./s5/plugins/crypto/python_crypto.py	/^    def __init__(self,keyBits):$/;"	m	class:RSAAlgorithm
+__init__	./s5/plugins/crypto/python_hashlib.py	/^    def __init__(self,algo):$/;"	m	class:HashFactory
+__init__	./s5/plugins/items/__init__.py	/^    def __init__(self,path,package):$/;"	m	class:ItemAccessorRegistry
+__init__	./s5/plugins/items/core.py	/^        def __init__(self,item):$/;"	m	class:Register.FileAccessor
+__init__	./s5/plugins/items/core.py	/^        def __init__(self,item):$/;"	m	class:Register.JsonAccessor
+__init__	./s5/server/net.py	/^    def __init__ (self,messageHandlerFactory,*args,**kwargs):$/;"	m	class:ClientConnectionHandler
+__init__	./s5/server/net.py	/^    def __init__(self,address,port,exceptionHandler,connectionHandlerFactory):$/;"	m	class:ThreadedTCPServer
+__init__	./s5/server/net.py	/^    def __init__(self,messageHandlerFactory,exceptionHandler):$/;"	m	class:NetworkServer
+__init__	./s5/server/net.py	/^    def __init__(self,socket,handler):$/;"	m	class:ServerProtocol
+__init__	./s5/server/server.py	/^    def __init__(self,databasePath,objectsPath,remoteAddress,publicKey):$/;"	m	class:ServerMessageHandler
+__init__	./s5/server/server.py	/^    def __init__(self,rootDirectory):$/;"	m	class:S5Server
+__init__	./s5/shared/messaging.py	/^    def __init__(self, **kwargs):$/;"	f	function:DefineMessageType
+__init__	./s5/shared/messaging.py	/^    def __init__(self,msg,expectedType):$/;"	m	class:UnexpectedMessage
+__init__	./s5/shared/messaging.py	/^    def __init__(self,socket):$/;"	m	class:S5BaseProtocol
+__init__	./s5/shared/test_messaging.py	/^        def __init__(self,b):$/;"	m	class:TestUtil.RecvSocket
+__init__	./s5/shared/test_messaging.py	/^    def __init__(self):$/;"	m	class:TestUtil
+__init__	./s5/shared/util.py	/^    def __init__(self,databasefile):$/;"	m	class:CommonDatabase
+__iter__	./s5/plugins/__init__.py	/^    def __iter__(self):$/;"	m	class:AlgorithmProviderStore	file:
+__iter__	./s5/plugins/items/core.py	/^        def __iter__ (self):$/;"	m	class:Register.MapAccessor	file:
+__iter__	./s5/shared/messaging.py	/^    def __iter__(self):$/;"	f	function:DefineMessageType	file:
+__len__	./s5/plugins/items/core.py	/^        def __len__(self):$/;"	m	class:Register.ListAccessor	file:
+__len__	./s5/plugins/items/core.py	/^        def __len__(self):$/;"	m	class:Register.MapAccessor	file:
+__len__	./s5/shared/messaging.py	/^    def __len__(self):$/;"	f	function:DefineMessageType	file:
+__repr__	./s5/client/items.py	/^    def __repr__(self):$/;"	m	class:BaseAccessor	file:
+__repr__	./s5/shared/messaging.py	/^    def __repr__(self):$/;"	m	class:Message	file:
+__setattr__	./s5/client/items.py	/^    def __setattr__(self,attr,value):$/;"	m	class:BaseAccessor	file:
+__setitem__	./s5/plugins/items/core.py	/^        def __setitem__(self,key,item):$/;"	m	class:Register.MapAccessor	file:
+__setitem__	./s5/plugins/items/core.py	/^        def __setitem__(self,key,value):$/;"	m	class:Register.ListAccessor	file:
+__str__	./s5/client/items.py	/^    def __str__(self):$/;"	m	class:BaseAccessor	file:
+_decryptItemKey	./s5/client/client.py	/^    def _decryptItemKey(self,encryptedKey):$/;"	m	class:S5Client
+_do_upgrade	./s5/client/client.py	/^    def _do_upgrade(self,fromVersion):$/;"	m	class:S5Client
+_do_upgrade	./s5/client/client.py	/^    def _do_upgrade(self,v):$/;"	m	class:CatalogMixin
+_encodeHeader	./s5/shared/messaging.py	/^    def _encodeHeader(self,typ,length):$/;"	m	class:S5BaseProtocol
+_encryptItemKey	./s5/client/client.py	/^    def _encryptItemKey(self,key):$/;"	m	class:S5Client
+_filterIdsToUpdate	./s5/client/sync.py	/^    def _filterIdsToUpdate(self,nvfs,conflicts,unknown,ignored):$/;"	m	class:SyncMixin
+_generateAndStoreDeviceKey	./s5/client/client.py	/^    def _generateAndStoreDeviceKey(self):$/;"	m	class:S5Client
+_getDevicePrivateKey	./s5/client/client.py	/^    def _getDevicePrivateKey(self):$/;"	m	class:S5Client
+_getNewestVersionFromServerForItems	./s5/client/sync.py	/^    def _getNewestVersionFromServerForItems(self,cp,server,ids):$/;"	m	class:SyncMixin
+_itemForPath	./s5/client/filesync.py	/^    def _itemForPath(self,fsPath):$/;"	m	class:FileSyncMixin
+_params	./s5/plugins/crypto/python_crypto.py	/^    def _params(self,key,iv):$/;"	m	class:SymmetricEncryptorFactory
+_receive	./s5/shared/messaging.py	/^    def _receive(self,size):$/;"	m	class:S5BaseProtocol
+_receiveHeader	./s5/shared/messaging.py	/^    def _receiveHeader(self):$/;"	m	class:S5BaseProtocol
+_selfCheck	./s5/client/client.py	/^    def _selfCheck(self):$/;"	m	class:S5Client
+_selfCheck	./s5/server/server.py	/^    def _selfCheck(self):$/;"	m	class:S5Server
+_updateItem	./s5/client/client.py	/^    def _updateItem(self,metaData,contentIter,key):$/;"	m	class:S5Client
+_updateItemsToServer	./s5/client/sync.py	/^    def _updateItemsToServer(self,iwocs,server,cp):$/;"	m	class:SyncMixin
+_updateItemsToVersionFromServer	./s5/client/sync.py	/^    def _updateItemsToVersionFromServer(self,versions,server,cp):$/;"	m	class:SyncMixin
+activateVersion	./s5/server/server.py	/^    def activateVersion(self,itemId,newVersionId,size,oldVersionId = None):$/;"	m	class:ServerDataBase
+add	./s5/plugins/__init__.py	/^    def add(self,provider,algo,impl):$/;"	m	class:AlgorithmProviderStore
+addAttribute	./s5/shared/util.py	/^def addAttribute(attr,val):$/;"	f
+addFile	./test.py	/^def addFile(m):$/;"	f
+addFilePathToIndex	./s5/client/filesync.py	/^    def addFilePathToIndex(self,idxPath,fsPath):$/;"	m	class:FileSyncMixin
+addGetter	./s5/shared/messaging.py	/^    def addGetter(key,spec):$/;"	f	function:DefineMessageType
+addItem	./s5/client/client.py	/^    def addItem(self,itemData):$/;"	m	class:ClientDatabase
+addItem	./s5/server/server.py	/^    def addItem(self,**itemData):$/;"	m	class:ServerDataBase
+addItemVersion	./s5/client/net.py	/^    def addItemVersion(self,itemId,encContIter,sizeOfEncryptedContent,shareId,oldVersionId,versioningScheme,**data):$/;"	m	class:ClientProtocol
+addItemVersion	./s5/server/server.py	/^    def addItemVersion(self,itemId,oldVersionId,**itemData):$/;"	m	class:ServerMessageHandler
+addItemVersion	./s5/server/server.py	/^    def addItemVersion(self,oldVersionId,**itemData):$/;"	m	class:ServerDataBase
+addServer	./s5/client/sync.py	/^    def addServer(self,userId,name,host,port):$/;"	m	class:SyncMixin
+askForDeviceKeyPassword	./s5/client/cli.py	/^    def askForDeviceKeyPassword(self):$/;"	m	class:CliCallbacks
+askForDeviceKeyPassword	./s5/client/client.py	/^    def askForDeviceKeyPassword():$/;"	m	class:ClientCallbacks
+askForDeviceKeyPassword	./s5/client/test_cli.py	/^    def askForDeviceKeyPassword(self):$/;"	m	class:TestCallbacks
+askForDeviceKeyPassword	./s5/client/test_client.py	/^    def askForDeviceKeyPassword(self):$/;"	m	class:TestCallbacks
+askForNewDeviceKeyPassword	./s5/client/cli.py	/^    def askForNewDeviceKeyPassword(self):$/;"	m	class:CliCallbacks
+askForNewDeviceKeyPassword	./s5/client/client.py	/^    def askForNewDeviceKeyPassword(self):$/;"	m	class:ClientCallbacks
+askForNewDeviceKeyPassword	./s5/client/test_cli.py	/^    def askForNewDeviceKeyPassword(self):$/;"	m	class:TestCallbacks
+askForNewDeviceKeyPassword	./s5/client/test_client.py	/^    def askForNewDeviceKeyPassword(self):$/;"	m	class:TestCallbacks
+asymEncryption	./s5/client/test_cli.py	/^    asymEncryption= "rsa-1024"$/;"	v	class:TestCallbacks
+asymEncryption	./s5/client/test_client.py	/^    asymEncryption= "rsa-1024"$/;"	v	class:TestCallbacks
+base64decode	./s5/shared/serialize.py	/^def base64decode(s):$/;"	f
+base64encode	./s5/shared/serialize.py	/^def base64encode(b):$/;"	f
+beginUpdate	./s5/client/items.py	/^    def beginUpdate(self):$/;"	m	class:BaseAccessor
+blocks	./s5/client/cli.py	/^            def blocks():$/;"	f	function:CliMixIn.hexDumpItemContents
+buffer	./s5/shared/test_messaging.py	/^        buffer=b''$/;"	v	class:TestUtil.SendSocket
+bytesToObj	./s5/shared/serialize.py	/^def bytesToObj(b):$/;"	f
+bytesToStr	./s5/shared/serialize.py	/^def bytesToStr(b):$/;"	f
+char	./s5/client/cli.py	/^            def char(b):$/;"	f	function:CliMixIn.hexDumpItemContents
+childIds	./s5/client/items.py	/^    def childIds(self):$/;"	m	class:BaseAccessor
+childIds	./s5/plugins/items/core.py	/^        def childIds(self):$/;"	m	class:Register.ListAccessor
+childIds	./s5/plugins/items/core.py	/^        def childIds(self):$/;"	m	class:Register.MapAccessor
+childIdsWithKeys	./s5/client/items.py	/^    def childIdsWithKeys(self):$/;"	m	class:BaseAccessor
+childIdsWithKeys	./s5/plugins/items/core.py	/^        def childIdsWithKeys(self):$/;"	m	class:Register.ListAccessor
+childIdsWithKeys	./s5/plugins/items/core.py	/^        def childIdsWithKeys(self):$/;"	m	class:Register.MapAccessor
+client	./s5/shared/test_messaging.py	/^        def client():$/;"	f	function:TestProtocol.test_protocol
+clientFunc	./s5/server/test_net.py	/^        def clientFunc():$/;"	f	function:testNet.test_server
+clientsetup	./aliases.bash	/^clientsetup(){$/;"	f
+close	./s5/client/net.py	/^    def close(self):$/;"	m	class:ClientProtocol
+close	./s5/server/server.py	/^    def close(self):$/;"	m	class:ServerMessageHandler
+close	./s5/shared/messaging.py	/^    def close(self):$/;"	m	class:S5BaseProtocol
+close	./s5/shared/util.py	/^    def close(self):$/;"	m	class:CommonDatabase
+compression	./s5/client/test_cli.py	/^    compression='bz2-9'$/;"	v	class:TestCallbacks
+compression	./s5/client/test_client.py	/^    compression = 'zlib-0'$/;"	v	class:TestCallbacks
+contentIter	./s5/server/server.py	/^        def contentIter():$/;"	f	function:ServerMessageHandler.getItemVersion
+continueUsing	./s5/plugins/crypto/null.py	/^        def continueUsing(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+continueUsing	./s5/plugins/crypto/null.py	/^        def continueUsing(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+continueUsing	./s5/plugins/crypto/python_crypto.py	/^        def continueUsing(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+continueUsing	./s5/plugins/crypto/python_crypto.py	/^        def continueUsing(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+cov	./test.py	/^cov=coverage.coverage(branch=True,omit=('test.py',))$/;"	v
+createDatabase	./s5/shared/util.py	/^    def createDatabase(self):$/;"	m	class:CommonDatabase
+db_addServer	./s5/client/sync.py	/^    def db_addServer(self,userId,name,host,port,fingerprint,fingerprintMethod):$/;"	m	class:SyncMixin
+db_getAllServers	./s5/client/sync.py	/^    def db_getAllServers(self):$/;"	m	class:SyncMixin
+db_getServer	./s5/client/sync.py	/^    def db_getServer(self,name):$/;"	m	class:SyncMixin
+db_getSyncs	./s5/client/sync.py	/^    def db_getSyncs(self,itemIds = None,server=None):$/;"	m	class:SyncMixin
+db_get_sync_for_items	./s5/client/sync.py	/^    def db_get_sync_for_items(self,server,item_ids):$/;"	m	class:SyncMixin
+db_setSync	./s5/client/sync.py	/^    def db_setSync(self, server, itemId, versionId, encryptedContentHash, direction, time):$/;"	m	class:SyncMixin
+deco	./s5/shared/util.py	/^    def deco(func):$/;"	f	function:addAttribute
+decrypt	./s5/plugins/crypto/python_crypto.py	/^        def decrypt(self,cipherText):$/;"	m	class:ElGamalAlgorithm.AsymmetricDecryptor
+decrypt	./s5/plugins/crypto/python_crypto.py	/^        def decrypt(self,cipherText):$/;"	m	class:RSAAlgorithm.AsymmetricDecryptor
+decryptSymmetric	./s5/shared/utilcrypto.py	/^def decryptSymmetric(**kwargs):$/;"	f
+deleteInactiveItemVersion	./s5/server/server.py	/^    def deleteInactiveItemVersion(self,itemId,versionId):$/;"	m	class:ServerDataBase
+dontClose	./s5/client/test_items.py	/^            def dontClose():$/;"	f	function:ItemTestBase.MemoryStorage.open
+dumpItemContents	./s5/client/cli.py	/^    def dumpItemContents(self,item):$/;"	m	class:CliMixIn
+editFileItem	./s5/client/cli.py	/^    def editFileItem(self,path,editor = None,parents = False,force = False):$/;"	m	class:CliMixIn
+eh	./s5/client/test_sync.py	/^        def eh(socket,addr,ex):$/;"	f	function:TestSynchronizationMixIn.setUpClass
+encrypt	./s5/plugins/crypto/python_crypto.py	/^        def encrypt(self,cipherText):$/;"	m	class:ElGamalAlgorithm.AsymmetricEncryptor
+encrypt	./s5/plugins/crypto/python_crypto.py	/^        def encrypt(self,cipherText):$/;"	m	class:RSAAlgorithm.AsymmetricEncryptor
+encryptSymmetric	./s5/shared/utilcrypto.py	/^def encryptSymmetric(**kwargs):$/;"	f
+endUpdate	./s5/client/items.py	/^    def endUpdate(self,item):$/;"	m	class:BaseAccessor
+ensureLoaded	./s5/plugins/__init__.py	/^    def ensureLoaded(self):$/;"	m	class:BaseRegistry
+exceptionHandler	./s5/server/server.py	/^    def exceptionHandler(self,socket,address,exception):$/;"	m	class:S5Server
+exceptionHandler	./s5/server/test_net.py	/^        def exceptionHandler(socket,addr,e):$/;"	f	function:testNet.test_server
+exists	./s5/client/test_items.py	/^        def exists(self):$/;"	m	class:ItemTestBase.MemoryStorage
+expectedFingerprint	./s5/client/test_client.py	/^    expectedFingerprint = None$/;"	v	class:TestCallbacks
+exportInfoForItemOnServer	./s5/client/cli.py	/^    def exportInfoForItemOnServer(self,item,server):$/;"	m	class:CliMixIn
+extractPasswordProtectedData	./s5/shared/utilcrypto.py	/^def extractPasswordProtectedData(wrap,password):$/;"	f
+factory	./s5/server/net.py	/^        def factory(*args,**kwargs):$/;"	f	function:ClientConnectionHandler.newFactory
+failedmodules	./test.py	/^failedmodules=set()$/;"	v
+fileHashEqual	./s5/shared/utilcrypto.py	/^def fileHashEqual(algo,path,compare):$/;"	f
+filterIgnored	./s5/client/sync.py	/^            def filterIgnored(iwocs):$/;"	f	function:SyncMixin.synchronizeItemIdsToServer.verifyServerKey
+finish	./s5/plugins/compression/python_bz2.py	/^        def finish(self):$/;"	m	class:CompressionFactory.Compressor
+finish	./s5/plugins/compression/python_bz2.py	/^        def finish(self):$/;"	m	class:CompressionFactory.Decompressor
+finish	./s5/plugins/compression/python_zlib.py	/^        def finish(self):$/;"	m	class:CompressionFactory.Compressor
+finish	./s5/plugins/compression/python_zlib.py	/^        def finish(self):$/;"	m	class:CompressionFactory.Decompressor
+finish	./s5/plugins/crypto/null.py	/^        def finish(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+finish	./s5/plugins/crypto/null.py	/^        def finish(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+finish	./s5/plugins/crypto/python_crypto.py	/^        def finish(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+finish	./s5/plugins/crypto/python_crypto.py	/^        def finish(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+format	./test.py	/^            format="%(pathname)s:%(lineno)d: %(levelname)-10s  %(message)s")$/;"	v
+fromBytes	./s5/shared/messaging.py	/^    def fromBytes(cls, _bytes):$/;"	m	class:Message
+genTestItem	./s5/client/test_items.py	/^    def genTestItem(self,content):$/;"	m	class:ItemTestBase
+generatePrivateKey	./s5/plugins/crypto/python_crypto.py	/^    def generatePrivateKey(self):$/;"	m	class:ElGamalAlgorithm
+generatePrivateKey	./s5/plugins/crypto/python_crypto.py	/^    def generatePrivateKey(self):$/;"	m	class:RSAAlgorithm
+generateSymmetricEncryptionKey	./s5/shared/crypto.py	/^def generateSymmetricEncryptionKey(numBytes):$/;"	f
+get	./s5/plugins/__init__.py	/^    def get(self,algo,provider=None):$/;"	m	class:AlgorithmProviderStore
+getAccessorForItem	./s5/client/items.py	/^def getAccessorForItem(item):$/;"	f
+getAccessorForType	./s5/plugins/items/__init__.py	/^    def getAccessorForType(self,typ):$/;"	m	class:ItemAccessorRegistry
+getAddress	./s5/server/net.py	/^    def getAddress(self):$/;"	m	class:NetworkServer
+getAddress	./s5/server/server.py	/^    def getAddress(self):$/;"	m	class:S5Server
+getAsymmetricEncryptionAlgorithm	./s5/plugins/crypto/__init__.py	/^    def getAsymmetricEncryptionAlgorithm(self,algo,provider=None):$/;"	m	class:CryptoAlgorithmRegistry
+getAsymmetricEncryptionAlgorithm	./s5/shared/crypto.py	/^def getAsymmetricEncryptionAlgorithm(algo):$/;"	f
+getBlockSize	./s5/plugins/crypto/null.py	/^    def getBlockSize(self):$/;"	m	class:SymmetricEncryptorFactory
+getBlockSize	./s5/plugins/crypto/python_crypto.py	/^    def getBlockSize(self):$/;"	m	class:SymmetricEncryptorFactory
+getCompressed	./s5/plugins/compression/python_bz2.py	/^        def getCompressed(self):$/;"	m	class:CompressionFactory.Compressor
+getCompressed	./s5/plugins/compression/python_zlib.py	/^        def getCompressed(self):$/;"	m	class:CompressionFactory.Compressor
+getCompressionAlgorithm	./s5/plugins/compression/__init__.py	/^    def getCompressionAlgorithm(self,algo,provider=None):$/;"	m	class:CompressionAlgorithmRegistry
+getCompressionAlgorithm	./s5/shared/compression.py	/^def getCompressionAlgorithm(algo=None):$/;"	f
+getCompressor	./s5/plugins/compression/python_bz2.py	/^    def getCompressor(self):$/;"	m	class:CompressionFactory
+getCompressor	./s5/plugins/compression/python_zlib.py	/^    def getCompressor(self):$/;"	m	class:CompressionFactory
+getConnectionTimeout	./s5/client/client.py	/^    def getConnectionTimeout(self):$/;"	m	class:ClientCallbacks
+getContent	./s5/plugins/items/core.py	/^        def getContent(self):$/;"	m	class:Register.JsonAccessor
+getContentBytes	./s5/client/items.py	/^    def getContentBytes(self):$/;"	m	class:BaseAccessor
+getContentDef	./s5/client/items.py	/^    def getContentDef(self,default = None):$/;"	m	class:BaseAccessor
+getContentHash	./s5/client/items.py	/^    def getContentHash(self):$/;"	m	class:Item
+getContentIterator	./s5/client/items.py	/^    def getContentIterator(self,storage = None):$/;"	m	class:Item
+getContentType	./s5/client/items.py	/^    def getContentType(self):$/;"	m	class:Item
+getDecompressed	./s5/plugins/compression/python_bz2.py	/^        def getDecompressed(self):$/;"	m	class:CompressionFactory.Decompressor
+getDecompressed	./s5/plugins/compression/python_zlib.py	/^        def getDecompressed(self):$/;"	m	class:CompressionFactory.Decompressor
+getDecompressor	./s5/plugins/compression/python_bz2.py	/^    def getDecompressor(self):$/;"	m	class:CompressionFactory
+getDecompressor	./s5/plugins/compression/python_zlib.py	/^    def getDecompressor(self):$/;"	m	class:CompressionFactory
+getDecrypted	./s5/plugins/crypto/null.py	/^        def getDecrypted(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+getDecrypted	./s5/plugins/crypto/python_crypto.py	/^        def getDecrypted(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+getDecryptor	./s5/plugins/crypto/null.py	/^    def getDecryptor(self,key,iv=None):$/;"	m	class:SymmetricEncryptorFactory
+getDecryptor	./s5/plugins/crypto/python_crypto.py	/^    def getDecryptor(self,key,iv=None):$/;"	m	class:SymmetricEncryptorFactory
+getDecryptor	./s5/plugins/crypto/python_crypto.py	/^    def getDecryptor(self,privkey):$/;"	m	class:ElGamalAlgorithm
+getDecryptor	./s5/plugins/crypto/python_crypto.py	/^    def getDecryptor(self,privkey):$/;"	m	class:RSAAlgorithm
+getDefaultContent	./s5/plugins/items/core.py	/^        def getDefaultContent(self):$/;"	m	class:Register.JsonAccessor
+getDefaultContent	./s5/plugins/items/core.py	/^        def getDefaultContent(self):$/;"	m	class:Register.ListAccessor
+getDefaultContent	./s5/plugins/items/core.py	/^        def getDefaultContent(self):$/;"	m	class:Register.MapAccessor
+getDevicePublicKey	./s5/client/client.py	/^    def getDevicePublicKey(self):$/;"	m	class:S5Client
+getEncrypted	./s5/plugins/crypto/null.py	/^        def getEncrypted(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+getEncrypted	./s5/plugins/crypto/python_crypto.py	/^        def getEncrypted(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+getEncryptedContentIter	./s5/client/items.py	/^    def getEncryptedContentIter(self):$/;"	m	class:Item
+getEncryptedMetaData	./s5/client/items.py	/^    def getEncryptedMetaData(self):$/;"	m	class:Item
+getEncryptor	./s5/plugins/crypto/null.py	/^    def getEncryptor(self,key,iv=None):$/;"	m	class:SymmetricEncryptorFactory
+getEncryptor	./s5/plugins/crypto/python_crypto.py	/^    def getEncryptor(self,key,iv=None):$/;"	m	class:SymmetricEncryptorFactory
+getEncryptor	./s5/plugins/crypto/python_crypto.py	/^    def getEncryptor(self,pubkey):$/;"	m	class:ElGamalAlgorithm
+getEncryptor	./s5/plugins/crypto/python_crypto.py	/^    def getEncryptor(self,pubkey):$/;"	m	class:RSAAlgorithm
+getFingerprintFromAsymmetricKey	./s5/shared/utilcrypto.py	/^def getFingerprintFromAsymmetricKey(key,method):$/;"	f
+getHashAlgorithm	./s5/plugins/crypto/__init__.py	/^    def getHashAlgorithm(self,algo,provider=None):$/;"	m	class:CryptoAlgorithmRegistry
+getHashAlgorithm	./s5/shared/crypto.py	/^def getHashAlgorithm(algo):$/;"	f
+getHashMethod	./s5/client/items.py	/^    def getHashMethod(self):$/;"	m	class:Item
+getIV	./s5/plugins/crypto/null.py	/^    def getIV(self):$/;"	m	class:SymmetricEncryptorFactory
+getIV	./s5/plugins/crypto/python_crypto.py	/^    def getIV(self):$/;"	m	class:SymmetricEncryptorFactory
+getId	./s5/plugins/items/core.py	/^        def getId(self,key):$/;"	m	class:Register.MapAccessor
+getItem	./s5/client/client.py	/^    def getItem(self,itemId):$/;"	m	class:ClientDatabase
+getItem	./s5/client/client.py	/^    def getItem(self,itemId):$/;"	m	class:S5Client
+getItem	./s5/client/test_items.py	/^    def getItem(self,i):$/;"	m	class:ItemTestBase
+getItemByPath	./s5/client/client.py	/^    def getItemByPath(self,path):$/;"	m	class:CatalogMixin
+getItemBySpec	./s5/client/cli.py	/^    def getItemBySpec(self,*spec):$/;"	m	class:CliMixIn
+getItemId	./s5/client/items.py	/^    def getItemId(self):$/;"	m	class:Item
+getItemSaver	./s5/client/items.py	/^    def getItemSaver(self):$/;"	m	class:Item
+getItemStorage	./s5/client/client.py	/^    def getItemStorage(self,itemId):$/;"	m	class:S5Client
+getItemVersion	./s5/client/net.py	/^    def getItemVersion(self,itemId,versionId):$/;"	m	class:ClientProtocol
+getItemVersion	./s5/server/server.py	/^    def getItemVersion(self,itemId,versionId):$/;"	m	class:ServerDataBase
+getItemVersion	./s5/server/server.py	/^    def getItemVersion(self,itemId,versionId):$/;"	m	class:ServerMessageHandler
+getItemsWithoutCurrentSync	./s5/client/sync.py	/^    def getItemsWithoutCurrentSync(self,server,items):$/;"	m	class:SyncMixin
+getIvSize	./s5/plugins/crypto/null.py	/^    def getIvSize(self):$/;"	m	class:SymmetricEncryptorFactory
+getIvSize	./s5/plugins/crypto/python_crypto.py	/^    def getIvSize(self):$/;"	m	class:SymmetricEncryptorFactory
+getKeyFingerprint	./s5/server/server.py	/^    def getKeyFingerprint(self):$/;"	m	class:S5Server
+getKeySize	./s5/plugins/crypto/null.py	/^    def getKeySize(self):$/;"	m	class:SymmetricEncryptorFactory
+getKeySize	./s5/plugins/crypto/python_crypto.py	/^    def getKeySize(self):$/;"	m	class:SymmetricEncryptorFactory
+getLastModified	./s5/client/items.py	/^    def getLastModified(self):$/;"	m	class:Item
+getNewDeviceKeyAlgorithm	./s5/client/client.py	/^    def getNewDeviceKeyAlgorithm(self):$/;"	m	class:ClientCallbacks
+getNewDeviceKeyAlgorithm	./s5/client/test_cli.py	/^    def getNewDeviceKeyAlgorithm(self):$/;"	m	class:TestCallbacks
+getNewDeviceKeyAlgorithm	./s5/client/test_client.py	/^    def getNewDeviceKeyAlgorithm(self):$/;"	m	class:TestCallbacks
+getNewDeviceKeyProtectionAlgorithm	./s5/client/client.py	/^    def getNewDeviceKeyProtectionAlgorithm(self):$/;"	m	class:ClientCallbacks
+getNewDeviceKeyProtectionAlgorithm	./s5/client/test_cli.py	/^    def getNewDeviceKeyProtectionAlgorithm(self):$/;"	m	class:TestCallbacks
+getNewDeviceKeyProtectionAlgorithm	./s5/client/test_client.py	/^    def getNewDeviceKeyProtectionAlgorithm(self):$/;"	m	class:TestCallbacks
+getNewDeviceKeyProtectionPBKDF	./s5/client/client.py	/^    def getNewDeviceKeyProtectionPBKDF(self):$/;"	m	class:ClientCallbacks
+getNewDeviceKeyProtectionPBKDF	./s5/client/test_cli.py	/^    def getNewDeviceKeyProtectionPBKDF(self):$/;"	m	class:TestCallbacks
+getNewDeviceKeyProtectionPBKDF	./s5/client/test_client.py	/^    def getNewDeviceKeyProtectionPBKDF(self):$/;"	m	class:TestCallbacks
+getNewItemCompressionMethod	./s5/client/cli.py	/^    def getNewItemCompressionMethod(self):$/;"	m	class:CliCallbacks
+getNewItemCompressionMethod	./s5/client/client.py	/^    def getNewItemCompressionMethod(self):$/;"	m	class:ClientCallbacks
+getNewItemCompressionMethod	./s5/client/test_cli.py	/^    def getNewItemCompressionMethod(self):$/;"	m	class:TestCallbacks
+getNewItemCompressionMethod	./s5/client/test_client.py	/^    def getNewItemCompressionMethod(self):$/;"	m	class:TestCallbacks
+getNewItemEncryptionMethod	./s5/client/client.py	/^    def getNewItemEncryptionMethod(self):$/;"	m	class:ClientCallbacks
+getNewItemEncryptionMethod	./s5/client/test_cli.py	/^    def getNewItemEncryptionMethod(self):$/;"	m	class:TestCallbacks
+getNewItemEncryptionMethod	./s5/client/test_client.py	/^    def getNewItemEncryptionMethod(self):$/;"	m	class:TestCallbacks
+getNewItemHashMethod	./s5/client/client.py	/^    def getNewItemHashMethod(self):$/;"	m	class:ClientCallbacks
+getNewItemHashMethod	./s5/client/test_cli.py	/^    def getNewItemHashMethod(self):$/;"	m	class:TestCallbacks
+getNewItemHashMethod	./s5/client/test_client.py	/^    def getNewItemHashMethod(self):$/;"	m	class:TestCallbacks
+getNewItemVersions	./s5/server/server.py	/^    def getNewItemVersions(self,itemIds):$/;"	m	class:ServerDataBase
+getNewItemVersions	./s5/server/server.py	/^    def getNewItemVersions(self,items_with_versions):$/;"	m	class:ServerMessageHandler
+getNewServerAsymmetricKeyFingerprintMethod	./s5/client/client.py	/^    def getNewServerAsymmetricKeyFingerprintMethod(self):$/;"	m	class:ClientCallbacks
+getNewVersionsForItems	./s5/client/net.py	/^    def getNewVersionsForItems(self,items):$/;"	m	class:ClientProtocol
+getPBKDFAlgorithm	./s5/plugins/crypto/__init__.py	/^    def getPBKDFAlgorithm(self,algo,provider=None):$/;"	m	class:CryptoAlgorithmRegistry
+getPBKDFAlgorithm	./s5/shared/crypto.py	/^def getPBKDFAlgorithm(algo):$/;"	f
+getPublicFromPrivate	./s5/plugins/crypto/python_crypto.py	/^    def getPublicFromPrivate(self,privkey):$/;"	m	class:ElGamalAlgorithm
+getPublicFromPrivate	./s5/plugins/crypto/python_crypto.py	/^    def getPublicFromPrivate(self,privkey):$/;"	m	class:RSAAlgorithm
+getRandomBits	./s5/shared/crypto.py	/^def getRandomBits(numBits):$/;"	f
+getRandomBytes	./s5/shared/crypto.py	/^def getRandomBytes(numBytes):$/;"	f
+getRandomInt	./s5/shared/crypto.py	/^def getRandomInt(a,b):$/;"	f
+getRandomItemIdentifier	./s5/shared/crypto.py	/^def getRandomItemIdentifier():$/;"	f
+getRandomNumberGenerator	./s5/plugins/crypto/__init__.py	/^    def getRandomNumberGenerator(self):$/;"	m	class:CryptoAlgorithmRegistry
+getRootDirectory	./s5/client/cli.py	/^    def getRootDirectory(self):$/;"	m	class:CliCallbacks
+getRootDirectory	./s5/client/client.py	/^    def getRootDirectory(self):$/;"	m	class:ClientCallbacks
+getRootDirectory	./s5/client/test_cli.py	/^    def getRootDirectory(self):$/;"	m	class:TestCallbacks
+getRootDirectory	./s5/client/test_client.py	/^    def getRootDirectory(self):$/;"	m	class:TestCallbacks
+getRootItem	./s5/client/client.py	/^    def getRootItem(self):$/;"	m	class:CatalogMixin
+getSequentialBytes	./s5/shared/test_crypto.py	/^        def getSequentialBytes(num):$/;"	f	function:TestProviders.test_symmetricEncryption_providers
+getServerPublicKey	./s5/server/server.py	/^    def getServerPublicKey(self):$/;"	m	class:ServerMessageHandler
+getSetting	./s5/shared/util.py	/^    def getSetting(self,key):$/;"	m	class:CommonDatabase
+getSettingDef	./s5/shared/util.py	/^    def getSettingDef(self,key,default):$/;"	m	class:CommonDatabase
+getSizeOfEncryptedContent	./s5/client/items.py	/^    def getSizeOfEncryptedContent(self):$/;"	m	class:Item
+getStorage	./s5/server/server.py	/^    def getStorage(self,itemId,versionId):$/;"	m	class:ServerMessageHandler
+getSymmetricEncryptionAlgorithm	./s5/plugins/crypto/__init__.py	/^    def getSymmetricEncryptionAlgorithm(self,algo,provider=None):$/;"	m	class:CryptoAlgorithmRegistry
+getSymmetricEncryptionAlgorithm	./s5/shared/crypto.py	/^def getSymmetricEncryptionAlgorithm(algo):$/;"	f
+getUtcTime	./s5/server/server.py	/^def getUtcTime():$/;"	f
+getVersioningSchemeForItem	./s5/client/client.py	/^    def getVersioningSchemeForItem(self, itemId):$/;"	m	class:ClientCallbacks
+getter	./s5/shared/messaging.py	/^            def getter(self):$/;"	f	function:DefineMessageType.addGetter
+groupwiseIterator	./s5/shared/util.py	/^def groupwiseIterator(iterable,n):$/;"	f
+handle	./s5/server/net.py	/^    def handle(self):$/;"	m	class:ClientConnectionHandler
+handleLoop	./s5/client/test_client.py	/^        def handleLoop(key,**_):$/;"	f	function:TestIterationMixin.test_walkItemTree
+handle_CNewItemVersion	./s5/server/net.py	/^    def handle_CNewItemVersion(self,m):$/;"	m	class:ServerProtocol
+handle_CRequestItemVersion	./s5/server/net.py	/^    def handle_CRequestItemVersion(self,m):$/;"	m	class:ServerProtocol
+handle_CRequestNewVersionsForItems	./s5/server/net.py	/^    def handle_CRequestNewVersionsForItems(self,m):$/;"	m	class:ServerProtocol
+handle_Close	./s5/server/net.py	/^    def handle_Close(self,m):$/;"	m	class:ServerProtocol
+handle_error	./s5/server/net.py	/^    def handle_error(self,socket,addr):$/;"	m	class:ThreadedTCPServer
+has	./s5/shared/messaging.py	/^            def has(self):$/;"	f	function:DefineMessageType.addGetter
+hasContent	./s5/client/items.py	/^    def hasContent(self):$/;"	m	class:Item
+hasMore	./s5/plugins/compression/python_bz2.py	/^        def hasMore(self):$/;"	m	class:CompressionFactory.Compressor
+hasMore	./s5/plugins/compression/python_bz2.py	/^        def hasMore(self):$/;"	m	class:CompressionFactory.Decompressor
+hasMore	./s5/plugins/compression/python_zlib.py	/^        def hasMore(self):$/;"	m	class:CompressionFactory.Compressor
+hasMore	./s5/plugins/compression/python_zlib.py	/^        def hasMore(self):$/;"	m	class:CompressionFactory.Decompressor
+hasMore	./s5/plugins/crypto/null.py	/^        def hasMore(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+hasMore	./s5/plugins/crypto/null.py	/^        def hasMore(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+hasMore	./s5/plugins/crypto/python_crypto.py	/^        def hasMore(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+hasMore	./s5/plugins/crypto/python_crypto.py	/^        def hasMore(self):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+hashFile	./s5/shared/utilcrypto.py	/^def hashFile(algo,path):$/;"	f
+hashMethod	./s5/client/test_cli.py	/^    hashMethod="sha256"$/;"	v	class:TestCallbacks
+hashMethod	./s5/client/test_client.py	/^    hashMethod="sha256"$/;"	v	class:TestCallbacks
+hashString	./s5/shared/utilcrypto.py	/^def hashString(algo,string):$/;"	f
+hexDumpItemContents	./s5/client/cli.py	/^    def hexDumpItemContents(self,item,indent =""):$/;"	m	class:CliMixIn
+importInfoForItemOnServer	./s5/client/cli.py	/^    def importInfoForItemOnServer(self,path,info,createParents,overwrite_existing):$/;"	m	class:CliMixIn
+init	./s5/client/cli.py	/^    def init():$/;"	f	function:main
+initNew	./s5/client/items.py	/^    def initNew(self,$/;"	m	class:Item
+initOld	./s5/client/items.py	/^    def initOld(self,$/;"	m	class:Item
+initializeNew	./s5/client/client.py	/^    def initializeNew(self):$/;"	m	class:S5Client
+initializeNew	./s5/server/server.py	/^    def initializeNew(self):$/;"	m	class:S5Server
+insert	./s5/plugins/items/core.py	/^        def insert(self,key,value):$/;"	m	class:Register.ListAccessor
+it	./s5/shared/messaging.py	/^        def it():$/;"	f	function:S5BaseProtocol.receiveBlobIter
+item_edit	./s5/client/cli.py	/^    def item_edit():$/;"	f	function:main
+item_gc	./s5/client/cli.py	/^    def item_gc():$/;"	f	function:main
+item_inspect	./s5/client/cli.py	/^    def item_inspect():$/;"	f	function:main
+item_link	./s5/client/cli.py	/^    def item_link():$/;"	f	function:main
+item_new	./s5/client/cli.py	/^    def item_new():$/;"	f	function:main
+item_tree	./s5/client/cli.py	/^    def item_tree():$/;"	f	function:main
+item_unlink	./s5/client/cli.py	/^    def item_unlink():$/;"	f	function:main
+iterateItemTree	./s5/client/client.py	/^    def iterateItemTree(self,item):$/;"	m	class:IterationMixin
+loadIntoPath	./s5/plugins/items/core.py	/^        def loadIntoPath(self,path):$/;"	m	class:Register.FileAccessor
+loadPlugins	./s5/plugins/__init__.py	/^    def loadPlugins(self,path,package):$/;"	m	class:BaseRegistry
+logOutput	./test.py	/^logOutput=io.StringIO()$/;"	v
+logger	./s5/client/client.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	./s5/client/filesync.py	/^logger=logging.getLogger(__name__)$/;"	v
+logger	./s5/client/sync.py	/^logger = logging.getLogger(__name__)$/;"	v
+logger	./s5/client/test_client.py	/^logger=logging.getLogger(__name__)$/;"	v
+logger	./s5/client/test_filesync.py	/^logger=logging.getLogger(__name__)$/;"	v
+logger	./s5/client/test_items.py	/^logger=logging.getLogger(__name__)$/;"	v
+logger	./s5/client/test_sync.py	/^logger=logging.getLogger(__name__)$/;"	v
+logger	./s5/server/net.py	/^    logger=logging.getLogger('ServerProtocol')$/;"	v	class:ServerProtocol
+logger	./s5/server/net.py	/^logger=logging.getLogger(__name__)$/;"	v
+logger	./s5/server/server.py	/^logger = logging.getLogger(__name__)$/;"	v
+loop	./s5/client/cli.py	/^        def loop(item,key,ids,data,first,last):$/;"	f	function:CliMixIn.printItemTree
+loop	./s5/server/net.py	/^    def loop(self):$/;"	m	class:ServerProtocol
+m	./test.py	/^            m=mp.relative_to(p)$/;"	v
+main	./s5/client/cli.py	/^def main(o,inStream=None,outStream=None):$/;"	f
+main	./s5/server/__main__.py	/^def main(argv):$/;"	f
+makeItem	./s5/client/test_cli.py	/^        def makeItem(content,*path):$/;"	f	function:TestCliMixin.setUpClass
+makeNewItem	./s5/client/items.py	/^def makeNewItem(**kwargs):$/;"	f
+makeOldItem	./s5/client/items.py	/^def makeOldItem(**kwargs):$/;"	f
+makeOldItemWithoutWrap	./s5/client/items.py	/^def makeOldItemWithoutWrap(**kwargs):$/;"	f
+messageHandlerFactory	./s5/server/server.py	/^    def messageHandlerFactory(self,remoteAddress):$/;"	m	class:S5Server
+messageHandlerFactory	./s5/server/test_net.py	/^        def messageHandlerFactory(*args):$/;"	f	function:testNet.test_server
+newFactory	./s5/server/net.py	/^    def newFactory(cls,messageHandlerFactory):$/;"	m	class:ClientConnectionHandler
+newFileItem	./s5/client/cli.py	/^    def newFileItem(self,path,parents = False,force = False):$/;"	m	class:CliMixIn
+newItem	./s5/client/client.py	/^    def newItem(self,contentType):$/;"	m	class:S5Client
+newItem	./s5/client/test_items.py	/^    def newItem(self,typ):$/;"	m	class:ItemTestBase
+o	./s5/client/__main__.py	/^    o=parseArgs()$/;"	v
+objToBytes	./s5/shared/serialize.py	/^def objToBytes(obj):$/;"	f
+objToStr	./s5/shared/serialize.py	/^def objToStr(obj):$/;"	f
+open	./s5/client/test_items.py	/^        def open(self,mode,*args):$/;"	m	class:ItemTestBase.MemoryStorage
+p	./test.py	/^        p=( rootDir \/ '.failures')$/;"	v
+p	./test.py	/^        p=Path(__file__).resolve().parent$/;"	v
+pad	./s5/plugins/crypto/python_crypto.py	/^        def pad (self,m):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+parseArgs	./s5/client/cli.py	/^def parseArgs(*args):$/;"	f
+parseArgs	./s5/server/__main__.py	/^def parseArgs(*args):$/;"	f
+password	./s5/client/test_cli.py	/^    password="Password"$/;"	v	class:TestCallbacks
+password	./s5/client/test_client.py	/^    password="Password"$/;"	v	class:TestCallbacks
+passwordProtectData	./s5/shared/utilcrypto.py	/^def passwordProtectData(data,password,algo,pbkdf):$/;"	f
+pbkdf	./s5/client/test_cli.py	/^    pbkdf="pbkdf2-1000-hmac-sha1"$/;"	v	class:TestCallbacks
+pbkdf	./s5/client/test_client.py	/^    pbkdf="pbkdf2-1000-hmac-sha1"$/;"	v	class:TestCallbacks
+pbkdf2_1000_hmacSha1	./s5/plugins/crypto/python_crypto.py	/^def pbkdf2_1000_hmacSha1(password,salt,size):$/;"	f
+prettyPrintJson	./s5/client/cli.py	/^    def prettyPrintJson(self,item,indent =""):$/;"	m	class:CliMixIn
+printItemMeta	./s5/client/cli.py	/^    def printItemMeta(self,item,indent =''):$/;"	m	class:CliMixIn
+printItemSyncInfo	./s5/client/cli.py	/^    def printItemSyncInfo(self,item,indent ='',server=None):$/;"	m	class:CliMixIn
+printItemTree	./s5/client/cli.py	/^    def printItemTree(self,name,item,depth = 0,withId = True,meta = False,$/;"	m	class:CliMixIn
+printf	./s5/client/cli.py	/^    def printf(self,f,*params,ln ="\\n"):$/;"	m	class:CliMixIn
+putCompressed	./s5/plugins/compression/python_bz2.py	/^        def putCompressed(self,b):$/;"	m	class:CompressionFactory.Decompressor
+putCompressed	./s5/plugins/compression/python_zlib.py	/^        def putCompressed(self,b):$/;"	m	class:CompressionFactory.Decompressor
+putEncrypted	./s5/plugins/crypto/null.py	/^        def putEncrypted(self,b):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+putEncrypted	./s5/plugins/crypto/python_crypto.py	/^        def putEncrypted(self,b):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+putId	./s5/plugins/items/core.py	/^        def putId(self,key,itemId):$/;"	m	class:Register.MapAccessor
+putItemByPath	./s5/client/client.py	/^    def putItemByPath(self,item,path,**kwargs):$/;"	m	class:CatalogMixin
+putItemIdByPath	./s5/client/client.py	/^    def putItemIdByPath(self,itemId,path,createParents = False,overwrite_existing=False):$/;"	m	class:CatalogMixin
+putPlain	./s5/plugins/compression/python_bz2.py	/^        def putPlain(self,b):$/;"	m	class:CompressionFactory.Compressor
+putPlain	./s5/plugins/compression/python_zlib.py	/^        def putPlain(self,b):$/;"	m	class:CompressionFactory.Compressor
+putPlain	./s5/plugins/crypto/null.py	/^        def putPlain(self,b):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+putPlain	./s5/plugins/crypto/python_crypto.py	/^        def putPlain(self,b):$/;"	m	class:SymmetricEncryptorFactory.SymmetricEncryptor
+readBlock	./s5/client/items.py	/^        def readBlock():$/;"	f	function:BaseAccessor.saveFromStream
+receiveBlobIter	./s5/shared/messaging.py	/^    def receiveBlobIter(self):$/;"	m	class:S5BaseProtocol
+receiveMessage	./s5/shared/messaging.py	/^    def receiveMessage(self,expectedType=None):$/;"	m	class:S5BaseProtocol
+recv	./s5/shared/test_messaging.py	/^        def recv(self,bs):$/;"	m	class:TestUtil.RecvSocket
+registerAccessor	./s5/plugins/items/__init__.py	/^    def registerAccessor(self,cls):$/;"	m	class:ItemAccessorRegistry
+registerAsymmetricEncryptionAlgorithm	./s5/plugins/crypto/__init__.py	/^    def registerAsymmetricEncryptionAlgorithm(self,provider,algo,factory):$/;"	m	class:CryptoAlgorithmRegistry
+registerCompressionAlgorithm	./s5/plugins/compression/__init__.py	/^    def registerCompressionAlgorithm(self,provider,algo,factory):$/;"	m	class:CompressionAlgorithmRegistry
+registerHashAlgorithm	./s5/plugins/crypto/__init__.py	/^    def registerHashAlgorithm(self,provider,algo,factory):$/;"	m	class:CryptoAlgorithmRegistry
+registerPBKDF	./s5/plugins/crypto/__init__.py	/^    def registerPBKDF(self,provider,algo,impl):$/;"	m	class:CryptoAlgorithmRegistry
+registerRandomNumberGenerator	./s5/plugins/crypto/__init__.py	/^    def registerRandomNumberGenerator(self,provider,impl):$/;"	m	class:CryptoAlgorithmRegistry
+registerSymmetricEncryptionAlgorithm	./s5/plugins/crypto/__init__.py	/^    def registerSymmetricEncryptionAlgorithm(self,provider,algo,factory):$/;"	m	class:CryptoAlgorithmRegistry
+replace	./s5/client/test_items.py	/^        def replace(self,other):$/;"	m	class:ItemTestBase.MemoryStorage
+result	./test.py	/^result=unittest.TextTestRunner().run(suite)$/;"	v
+ret	./s5/client/__main__.py	/^    ret=main(o)$/;"	v
+rootDir	./test.py	/^rootDir=Path(__file__).parent$/;"	v
+save	./s5/client/items.py	/^    def save(self):$/;"	m	class:BaseAccessor
+save	./s5/client/items.py	/^    def save(self):$/;"	m	class:Item
+save	./s5/plugins/items/core.py	/^        def save(self):$/;"	m	class:Register.JsonAccessor
+saveFromBlocks	./s5/client/items.py	/^    def saveFromBlocks(self,blocks):$/;"	m	class:Item
+saveFromPath	./s5/plugins/items/core.py	/^        def saveFromPath(self,path):$/;"	m	class:Register.FileAccessor
+saveFromStream	./s5/client/items.py	/^    def saveFromStream(self,stream,bufferSize=io.DEFAULT_BUFFER_SIZE):$/;"	m	class:BaseAccessor
+saveItem	./s5/client/client.py	/^    def saveItem(self,item):$/;"	m	class:ClientDatabase
+saveItem	./s5/client/client.py	/^    def saveItem(self,item):$/;"	m	class:S5Client
+saveItem	./s5/client/test_items.py	/^    def saveItem(self,it):$/;"	m	class:ItemTestBase
+saveNewContent	./s5/client/items.py	/^    def saveNewContent(self,newContent):$/;"	m	class:BaseAccessor
+saveWithModTime	./s5/client/items.py	/^    def saveWithModTime(self,modTime):$/;"	m	class:Item
+sendBlobFromIter	./s5/shared/messaging.py	/^    def sendBlobFromIter(self,dataIter,size):$/;"	m	class:S5BaseProtocol
+sendErrorMessage	./s5/server/net.py	/^    def sendErrorMessage(msg,*p):$/;"	m	class:ServerProtocol
+sendMessage	./s5/shared/messaging.py	/^    def sendMessage(self,msg):$/;"	m	class:S5BaseProtocol
+sendall	./s5/shared/test_messaging.py	/^        def sendall(self,b):$/;"	m	class:TestUtil.SendSocket
+serv	./s5/server/test_server.py	/^        def serv():$/;"	f	function:TestS5Server.test_shutdown
+serve	./s5/server/net.py	/^    def serve(self):$/;"	m	class:NetworkServer
+serve	./s5/server/server.py	/^    def serve(self):$/;"	m	class:S5Server
+serveInThread	./s5/server/server.py	/^    def serveInThread(self):$/;"	m	class:S5Server
+server	./s5/shared/test_messaging.py	/^        def server():$/;"	f	function:TestProtocol.test_protocol
+serverFunc	./s5/server/test_net.py	/^        def serverFunc():$/;"	f	function:testNet.test_server
+server_add	./s5/client/cli.py	/^    def server_add():$/;"	f	function:main
+server_list	./s5/client/cli.py	/^    def server_list():$/;"	f	function:main
+setClientData	./s5/server/server.py	/^    def setClientData(self,userid):$/;"	m	class:ServerMessageHandler
+setContent	./s5/plugins/items/core.py	/^        def setContent(self,o):$/;"	m	class:Register.JsonAccessor
+setSetting	./s5/shared/util.py	/^    def setSetting(self,key,value):$/;"	m	class:CommonDatabase
+setUp	./s5/client/test_cli.py	/^    def setUp(self):$/;"	m	class:TestCliMixin
+setUp	./s5/client/test_items.py	/^    def setUp(self):$/;"	m	class:ItemTestBase
+setUpClass	./s5/client/test_cli.py	/^    def setUpClass(cls):$/;"	m	class:TestCliMixin
+setUpClass	./s5/client/test_client.py	/^    def setUpClass(cls):$/;"	m	class:TestS5Client
+setUpClass	./s5/client/test_filesync.py	/^    def setUpClass(cls):$/;"	m	class:TestFsync
+setUpClass	./s5/client/test_sync.py	/^    def setUpClass(self):$/;"	m	class:TestSynchronizationMixIn
+setUpClass	./s5/server/test_server.py	/^    def setUpClass(self):$/;"	m	class:TestServerMessageHandler
+setUpClass	./s5/shared/test_utilcrypto.py	/^    def setUpClass(cls):$/;"	m	class:TestCryptoUtils
+setUpModule	./s5/client/test_cli.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/client/test_client.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/client/test_filesync.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/client/test_sync.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/server/test_server.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/shared/test_compression.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/shared/test_crypto.py	/^def setUpModule():$/;"	f
+setUpModule	./s5/shared/test_utilcrypto.py	/^def setUpModule():$/;"	f
+setup	./s5/client/net.py	/^    def setup(self,userId,devicePublicKey,verifyServerKey):$/;"	m	class:ClientProtocol
+setup	./s5/server/net.py	/^    def setup(self):$/;"	m	class:ServerProtocol
+setup	./s5/server/net.py	/^    def setup(self,addr,port):$/;"	m	class:NetworkServer
+setup	./s5/server/server.py	/^    def setup(self,address,port):$/;"	m	class:S5Server
+shutdown	./s5/server/net.py	/^    def shutdown(self):$/;"	m	class:NetworkServer
+startCollecting	./s5/shared/messaging.py	/^    def startCollecting(self):$/;"	m	class:S5BaseProtocol
+stopCollecting	./s5/shared/messaging.py	/^    def stopCollecting(self):$/;"	m	class:S5BaseProtocol
+stopServing	./s5/server/server.py	/^    def stopServing(self):$/;"	m	class:S5Server
+stopServingAndJoin	./s5/server/server.py	/^    def stopServingAndJoin(self):$/;"	m	class:S5Server
+storeItemVersionData	./s5/server/server.py	/^    def storeItemVersionData(self,dataIter,itemId,newVersionId,oldVersionId = None):$/;"	m	class:ServerMessageHandler
+strToBytes	./s5/shared/serialize.py	/^def strToBytes(s):$/;"	f
+strToObj	./s5/shared/serialize.py	/^def strToObj(s):$/;"	f
+stream	./test.py	/^            stream=logOutput,$/;"	v
+sub	./s5/client/client.py	/^        def sub(path,itemId):$/;"	f	function:IterationMixin.iterateItemTree
+subIt	./s5/shared/util.py	/^    def subIt(first):$/;"	f	function:groupwiseIterator
+suite	./test.py	/^suite = unittest.TestSuite()$/;"	v
+symEncryption	./s5/client/test_cli.py	/^    symEncryption= "aes-128-cbc"$/;"	v	class:TestCallbacks
+symEncryption	./s5/client/test_client.py	/^    symEncryption= "null"$/;"	v	class:TestCallbacks
+sync	./s5/client/sync.py	/^            def sync(idsToSync,path):$/;"	f	function:SyncMixin.synchronizeItemIdsFromServer
+sync_export	./s5/client/cli.py	/^    def sync_export():$/;"	f	function:main
+sync_import	./s5/client/cli.py	/^    def sync_import():$/;"	f	function:main
+sync_pull	./s5/client/cli.py	/^    def sync_pull():$/;"	f	function:main
+sync_push	./s5/client/cli.py	/^    def sync_push():$/;"	f	function:main
+synchronizeItemFromServer	./s5/client/sync.py	/^    def synchronizeItemFromServer(self,item,server,recursive):$/;"	m	class:SyncMixin
+synchronizeItemIdsFromServer	./s5/client/sync.py	/^    def synchronizeItemIdsFromServer(self,itemIds,server,recursive):$/;"	m	class:SyncMixin
+synchronizeItemIdsToServer	./s5/client/sync.py	/^    def synchronizeItemIdsToServer(self,items,server):$/;"	m	class:SyncMixin
+synchronizeItemTreeToServer	./s5/client/sync.py	/^    def synchronizeItemTreeToServer(self,item,server,$/;"	m	class:SyncMixin
+t	./test.py	/^    t=unittest.defaultTestLoader.loadTestsFromName(m)$/;"	v
+tearDownClass	./s5/client/test_sync.py	/^    def tearDownClass(self):$/;"	m	class:TestSynchronizationMixIn
+tearDownClass	./s5/shared/test_utilcrypto.py	/^    def tearDownClass(cls):$/;"	m	class:TestCryptoUtils
+tearDownModule	./s5/client/test_cli.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/client/test_client.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/client/test_filesync.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/client/test_sync.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/server/test_server.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/shared/test_compression.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/shared/test_crypto.py	/^def tearDownModule():$/;"	f
+tearDownModule	./s5/shared/test_utilcrypto.py	/^def tearDownModule():$/;"	f
+testNet	./s5/server/test_net.py	/^class testNet(unittest.TestCase):$/;"	c
+test_B64	./s5/shared/test_serialize.py	/^    def test_B64(self):$/;"	m	class:SerializeTest
+test_FileItem	./s5/client/test_items.py	/^    def test_FileItem(self):$/;"	m	class:TestFileItem
+test_Interactor	./s5/client/test_cli.py	/^    def test_Interactor(self):$/;"	m	class:TestCli
+test_ItemWrapped	./s5/client/test_items.py	/^    def test_ItemWrapped(self):$/;"	m	class:TestItem
+test_StrRepr	./s5/client/test_items.py	/^    def test_StrRepr(self):$/;"	m	class:TestFileItem
+test_StreamSupport	./s5/client/test_items.py	/^    def test_StreamSupport(self):$/;"	m	class:TestFileItem
+test_addItem	./s5/server/test_server.py	/^    def test_addItem(self):$/;"	m	class:TestServerMessageHandler
+test_args	./s5/server/test___main__.py	/^    def test_args(self):$/;"	m	class:TestCli
+test_asymetricEncryption	./s5/shared/test_crypto.py	/^    def test_asymetricEncryption(self):$/;"	m	class:TestCrypto
+test_asymmetricEncryption_providers	./s5/shared/test_crypto.py	/^    def test_asymmetricEncryption_providers(self):$/;"	m	class:TestProviders
+test_attachedType	./s5/client/test_net.py	/^    def test_attachedType(self):$/;"	m	class:TestClientProtocoll
+test_cmd	./s5/client/test_cli.py	/^    def test_cmd(self):$/;"	m	class:TestCli
+test_collection	./s5/client/test_items.py	/^    def test_collection(self):$/;"	m	class:TestCollectionItem
+test_compressionMethodChange	./s5/client/test_items.py	/^    def test_compressionMethodChange(self):$/;"	m	class:TestItemCryptography
+test_coupled	./s5/shared/test_serialize.py	/^    def test_coupled(self):$/;"	m	class:SerializeTest
+test_db	./s5/server/test_server.py	/^    def test_db(self):$/;"	m	class:TestServerMessageHandler
+test_defaultWorks	./s5/shared/test_compression.py	/^    def test_defaultWorks(self):$/;"	m	class:TestCompression
+test_deserializeObj	./s5/shared/test_serialize.py	/^    def test_deserializeObj(self):$/;"	m	class:SerializeTest
+test_deserializeStr	./s5/shared/test_serialize.py	/^    def test_deserializeStr(self):$/;"	m	class:SerializeTest
+test_easyEncryption	./s5/shared/test_utilcrypto.py	/^    def test_easyEncryption(self):$/;"	m	class:TestCryptoUtils
+test_encryption	./s5/client/test_items.py	/^    def test_encryption(self):$/;"	m	class:TestItemCryptography
+test_encryption	./s5/shared/test_crypto.py	/^    def test_encryption(self):$/;"	m	class:TestCrypto
+test_encryptionAlgorithmChange	./s5/client/test_items.py	/^    def test_encryptionAlgorithmChange(self):$/;"	m	class:TestItemCryptography
+test_encryptionIV	./s5/client/test_items.py	/^    def test_encryptionIV(self):$/;"	m	class:TestItemCryptography
+test_encryptionKeyChange	./s5/client/test_items.py	/^    def test_encryptionKeyChange(self):$/;"	m	class:TestItemCryptography
+test_fileHashEqual	./s5/shared/test_utilcrypto.py	/^    def test_fileHashEqual(self):$/;"	m	class:TestCryptoUtils
+test_generateSymmetricEncryptionKey	./s5/shared/test_crypto.py	/^    def test_generateSymmetricEncryptionKey(self):$/;"	m	class:TestCrypto
+test_getItemVersionContent	./s5/server/test_server.py	/^    def test_getItemVersionContent(self):$/;"	m	class:TestServerMessageHandler
+test_getNewItemVersions	./s5/server/test_server.py	/^    def test_getNewItemVersions(self):$/;"	m	class:TestServerMessageHandler
+test_getRandomBits	./s5/shared/test_crypto.py	/^    def test_getRandomBits(self):$/;"	m	class:TestCrypto
+test_getRandomInt	./s5/shared/test_crypto.py	/^    def test_getRandomInt(self):$/;"	m	class:TestCrypto
+test_getRandomItemIdentifier	./s5/shared/test_crypto.py	/^    def test_getRandomItemIdentifier(self):$/;"	m	class:TestCrypto
+test_groupwiseIterator	./s5/shared/test_util.py	/^    def test_groupwiseIterator(self):$/;"	m	class:TestUtils
+test_hashFile	./s5/shared/test_utilcrypto.py	/^    def test_hashFile(self):$/;"	m	class:TestCryptoUtils
+test_hashString	./s5/shared/test_utilcrypto.py	/^    def test_hashString(self):$/;"	m	class:TestCryptoUtils
+test_hash_providers	./s5/shared/test_crypto.py	/^    def test_hash_providers(self):$/;"	m	class:TestProviders
+test_hashing	./s5/client/test_items.py	/^    def test_hashing(self):$/;"	m	class:TestItemCryptography
+test_hex	./s5/client/test_cli.py	/^    def test_hex(self):$/;"	m	class:TestCliMixin
+test_init	./s5/server/test_server.py	/^    def test_init(self):$/;"	m	class:TestS5Server
+test_initDeviceKey	./s5/client/test_client.py	/^    def test_initDeviceKey(self):$/;"	m	class:TestS5Client
+test_item	./s5/client/test_items.py	/^    def test_item(self):$/;"	m	class:TestItem
+test_itemByName	./s5/client/test_client.py	/^    def test_itemByName(self):$/;"	m	class:TestCatalogMixin
+test_itemNotExisting	./s5/client/test_client.py	/^    def test_itemNotExisting(self):$/;"	m	class:TestS5Client
+test_itemWeakRef	./s5/client/test_client.py	/^    def test_itemWeakRef(self):$/;"	m	class:TestS5Client
+test_iterateItemTree	./s5/client/test_client.py	/^    def test_iterateItemTree(self):$/;"	m	class:TestIterationMixin
+test_jsonitem	./s5/client/test_items.py	/^    def test_jsonitem(self):$/;"	m	class:TestJSONItem
+test_largeCompression	./s5/shared/test_compression.py	/^    def test_largeCompression(self):$/;"	m	class:TestCompression
+test_listMethods	./s5/client/test_items.py	/^    def test_listMethods(self):$/;"	m	class:TestCollectionItem
+test_map	./s5/client/test_items.py	/^    def test_map(self):$/;"	m	class:TestMapItem
+test_mapMethods	./s5/client/test_items.py	/^    def test_mapMethods(self):$/;"	m	class:TestMapItem
+test_message	./s5/shared/test_messaging.py	/^    def test_message(self):$/;"	m	class:TestS5BaseProtocol
+test_messageParameterAccess	./s5/shared/test_messaging.py	/^    def test_messageParameterAccess(self):$/;"	m	class:TestMessageTypes
+test_modTime	./s5/client/test_items.py	/^    def test_modTime(self):$/;"	m	class:TestItem
+test_new	./s5/client/test_cli.py	/^    def test_new(self):$/;"	m	class:TestCliMixin
+test_newItem	./s5/client/test_client.py	/^    def test_newItem(self):$/;"	m	class:TestS5Client
+test_newItemNotSaved	./s5/client/test_client.py	/^    def test_newItemNotSaved(self):$/;"	m	class:TestS5Client
+test_noMimeType	./s5/client/test_items.py	/^    def test_noMimeType(self):$/;"	m	class:TestFileItem
+test_passwordProtectAsymmetricKey	./s5/shared/test_utilcrypto.py	/^    def test_passwordProtectAsymmetricKey(self):$/;"	m	class:TestCryptoUtils
+test_pbkdf_providers	./s5/shared/test_crypto.py	/^    def test_pbkdf_providers(self):$/;"	m	class:TestProviders
+test_protocol	./s5/shared/test_messaging.py	/^    def test_protocol(self):$/;"	m	class:TestProtocol
+test_random_providers	./s5/shared/test_crypto.py	/^    def test_random_providers(self):$/;"	m	class:TestProviders
+test_receiveBlob	./s5/shared/test_messaging.py	/^    def test_receiveBlob(self):$/;"	m	class:TestS5BaseProtocol
+test_requiredAndOptionalParams	./s5/shared/test_messaging.py	/^    def test_requiredAndOptionalParams(self):$/;"	m	class:TestMessageTypes
+test_saveAbortedAfterMetaSave	./s5/client/test_items.py	/^    def test_saveAbortedAfterMetaSave(self):$/;"	m	class:TestItemCryptography
+test_saveAbortedBeforeMetaSave	./s5/client/test_items.py	/^    def test_saveAbortedBeforeMetaSave(self):$/;"	m	class:TestItemCryptography
+test_sendBlob	./s5/shared/test_messaging.py	/^    def test_sendBlob(self):$/;"	m	class:TestS5BaseProtocol
+test_seperateClients	./s5/client/test_items.py	/^    def test_seperateClients(self):$/;"	m	class:TestTheTestRig
+test_serializeObj	./s5/shared/test_serialize.py	/^    def test_serializeObj(self):$/;"	m	class:SerializeTest
+test_serializeStr	./s5/shared/test_serialize.py	/^    def test_serializeStr(self):$/;"	m	class:SerializeTest
+test_server	./s5/server/test_net.py	/^    def test_server(self):$/;"	m	class:testNet
+test_setup	./s5/server/test_server.py	/^    def test_setup(self):$/;"	m	class:TestS5Server
+test_shutdown	./s5/server/test_server.py	/^    def test_shutdown(self):$/;"	m	class:TestS5Server
+test_smallCompression	./s5/shared/test_compression.py	/^    def test_smallCompression(self):$/;"	m	class:TestCompression
+test_symmetricEncryption_providers	./s5/shared/test_crypto.py	/^    def test_symmetricEncryption_providers(self):$/;"	m	class:TestProviders
+test_sync	./s5/client/test_sync.py	/^    def test_sync(self):$/;"	m	class:TestSynchronizationMixIn
+test_tree	./s5/client/test_cli.py	/^    def test_tree(self):$/;"	m	class:TestCliMixin
+test_updateIndex	./s5/client/test_filesync.py	/^    def test_updateIndex(self):$/;"	m	class:TestFsync
+test_version	./s5/server/test___main__.py	/^    def test_version(self):$/;"	m	class:TestCli
+test_walkItemTree	./s5/client/test_client.py	/^    def test_walkItemTree(self):$/;"	m	class:TestIterationMixin
+tests	./test.py	/^tests=[]$/;"	v
+toBytes	./s5/shared/messaging.py	/^    def toBytes(self):$/;"	m	class:Message
+touchContent	./s5/plugins/items/core.py	/^        def touchContent(self):$/;"	m	class:Register.JsonAccessor
+unlink	./s5/client/test_items.py	/^        def unlink(self):$/;"	m	class:ItemTestBase.MemoryStorage
+unpad	./s5/plugins/crypto/python_crypto.py	/^        def unpad(self,m):$/;"	m	class:SymmetricEncryptorFactory.SymmetricDecryptor
+updateCompressionMethod	./s5/client/items.py	/^    def updateCompressionMethod(self,newCompressionMethod):$/;"	m	class:Item
+updateEncryptionKey	./s5/client/items.py	/^    def updateEncryptionKey(self,newEncryptionKey):$/;"	m	class:Item
+updateEncryptionMethod	./s5/client/items.py	/^    def updateEncryptionMethod(self,newEncryptionAlgorithm):$/;"	m	class:Item
+updateHashMethod	./s5/client/items.py	/^    def updateHashMethod(self,newHashMethod):$/;"	m	class:Item
+updateIndex	./s5/client/filesync.py	/^    def updateIndex(self,item,fsPath):$/;"	m	class:FileSyncMixin
+updateItemFromFile	./s5/client/filesync.py	/^    def updateItemFromFile(self,item,filePath):$/;"	m	class:FileSyncMixin
+upgrade	./s5/client/cli.py	/^    def upgrade():$/;"	f	function:main
+upgrade	./s5/client/client.py	/^    def upgrade(self):$/;"	m	class:S5Client
+upgrade	./s5/server/server.py	/^    def upgrade(self):$/;"	m	class:S5Server
+upgradeDatabase	./s5/client/client.py	/^    def upgradeDatabase(self,fromVersion):$/;"	m	class:ClientDatabase
+upgradeDatabase	./s5/server/server.py	/^    def upgradeDatabase(self,fromVersion):$/;"	m	class:ServerDataBase
+verifyNewServerFingerprint	./s5/client/cli.py	/^    def verifyNewServerFingerprint(self,fp):$/;"	m	class:CliCallbacks
+verifyNewServerFingerprint	./s5/client/client.py	/^    def verifyNewServerFingerprint(self,fp):$/;"	m	class:ClientCallbacks
+verifyNewServerFingerprint	./s5/client/test_cli.py	/^    def verifyNewServerFingerprint(self,fp):$/;"	m	class:TestCallbacks
+verifyNewServerFingerprint	./s5/client/test_client.py	/^    def verifyNewServerFingerprint(self,fp):$/;"	m	class:TestCallbacks
+verifyServerKey	./s5/client/sync.py	/^            def verifyServerKey(sk):$/;"	f	function:SyncMixin.synchronizeItemIdsFromServer
+verifyServerKey	./s5/client/sync.py	/^        def verifyServerKey(sk):$/;"	f	function:SyncMixin.addServer
+verifyServerKey	./s5/client/sync.py	/^        def verifyServerKey(sk):$/;"	f	function:SyncMixin.synchronizeItemIdsToServer
+visit	./s5/client/cli.py	/^        def visit(item,itemId,key,first,last,up,down,ids):$/;"	f	function:CliMixIn.printItemTree
+visit	./s5/client/client.py	/^        def visit(key,itemId,first,last,ids):$/;"	f	function:IterationMixin.walkItemTree
+visit	./s5/client/sync.py	/^        def visit(itemId,item,down,up,**_):$/;"	f	function:SyncMixin.synchronizeItemTreeToServer
+visit	./s5/client/test_client.py	/^        def visit(key,down,up,**_):$/;"	f	function:TestIterationMixin.test_walkItemTree
+visit	./s5/client/test_filesync.py	/^        def visit(key,down,up,**_):$/;"	f	function:TestFsync.test_updateIndex
+visit	./s5/client/test_sync.py	/^        def visit(itemId,down,**_):$/;"	f	function:TestSynchronizationMixIn.test_sync
+walkItemTree	./s5/client/client.py	/^    def walkItemTree(self,item,callback,loopCB=None):$/;"	m	class:IterationMixin
+with_suffix	./s5/client/test_items.py	/^        def with_suffix(self,x):$/;"	m	class:ItemTestBase.MemoryStorage
