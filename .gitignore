@@ -6,3 +6,6 @@
 .tags
 .testcoverage
 __pycache__/
+build/
+dist/
+s5.egg-info/
