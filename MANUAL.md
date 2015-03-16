@@ -35,24 +35,25 @@ The distributed **S5** tar ball should contain the following files and directori
 * `test.py`: A Python script that can be executed to run all tests and create a
   coverage report.
 * `Makefile`: A collection of small tools.
+* `setup.py`: The installation script.
 
 To execute client or server, Python has to be called in the correct version,
 with a variable pointing at the location of the code and the module to execute.
 For example the client is started with
 
-    PYTHONPATH=/path/To/implementation python3.4 -m s5.client
+    PYTHONPATH=/path/to/implementation python3.4 -m s5.client
 
-For easier shell access, the `Makefile` can be used to create two
-scripts, `s5client` and `s5server`. If these scripts are moved into a directory
-where the shell looks for executables (part of the `PATH` variable), they can be
-executed by their names. The `s5client` script is renamed to `s5` to make the
-code examples in the rest of this thesis shorter^[The script for the client has to be
-called `s5client` by the Makefile because there already is a folder called
-`s5`. If that script is moved somewhere else, it can be called `s5` there.].
+To install the package the install script can be executed or `pip` can be used.
+Each of the following commands will install the s5 package into the default
+python site directory and the two scripts `s5` (the client) and `s5server` (the
+server) into the shell's search path:
 
-    make s5client s5server
-    mv s5server ~/bin/
-    mv s5client ~/bin/s5
+    pip install /path/to/implementation
+    pip install https://github.com/wonkodv/s5
+    python setup.py install
+
+Read the help from the commands `pip install --help` or `python
+setup.py --help` for more options.
 
 
 ## Configuration
