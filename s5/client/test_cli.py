@@ -107,7 +107,7 @@ class TestCliMixin(unittest.TestCase):
         item.save()
         client.putItemByPath(
             item,
-            ['level1', 'level2', 'level3'], 
+            ['level1', 'level2', 'level3'],
             create_parents=True)
 
         itemId = item.itemId
@@ -117,17 +117,17 @@ class TestCliMixin(unittest.TestCase):
         # not deleted yet
         client.getItem(itemId)
 
-        
+
         client.putItemIdByPath(
             "00000000000000000000000000000005",
-            ['level1', "level2"], 
+            ['level1', "level2"],
             overwrite_existing=True)
- 
+
 
         client.removeUnreachableItems()
         with self.assertRaises(KeyError, msg=itemId+" not deleted"):
             client.getItem(itemId)
-        
+
 
 class TestCli(unittest.TestCase):
 

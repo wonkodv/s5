@@ -1,5 +1,5 @@
 """
-    Registry of different accessors 
+    Registry of different accessors
 """
 import pathlib
 from .. import BaseRegistry

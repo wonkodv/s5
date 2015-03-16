@@ -1,5 +1,5 @@
 """
-    Make most client side functions available via a Command Line Interface 
+    Make most client side functions available via a Command Line Interface
 """
 
 
@@ -54,7 +54,7 @@ class CliMixIn(
         filesync.FileSyncMixin,
         client.CatalogMixin,
         client.S5Client):
-    
+
     """
         Functions that work with stdin and stdout and command line arguments.
         Catalog Paths are specified with slashes, like unix file paths.
@@ -634,7 +634,7 @@ class CliMixIn(
         item.save()
 
     def removeUnreachableItems(self):
-        """ 
+        """
             Remove all local items that are not reachable in the item catalog
         """
         c = self.db.cursor()
@@ -643,8 +643,8 @@ class CliMixIn(
             try:
                 c.execute("""
                     CREATE TEMPORARY TABLE gc AS
-                        SELECT 
-                            itemId 
+                        SELECT
+                            itemId
                         FROM
                             item
                     """)
@@ -669,13 +669,13 @@ class CliMixIn(
                     p.unlink()
                     logger.debug("Collected unreachable Item %s", itemId)
                 c.execute("""
-                    DELETE FROM item 
+                    DELETE FROM item
                     WHERE itemId IN (
                         SELECT itemId
                         FROM gc)
                     """)
                 c.execute("""
-                    DELETE FROM sync 
+                    DELETE FROM sync
                     WHERE itemId IN (
                         SELECT itemId
                         FROM gc)

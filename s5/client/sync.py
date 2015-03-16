@@ -630,7 +630,7 @@ class SyncMixin(client.IterationMixin):
 
     def addServer(self, name, host, port,
                   fingerprintMethod=None, fingerprint=None, overwrite=False):
-        
+
         """ Add a server, connect to test the server key, ping to see if the
         server authorizes that. Return whether authorized. """
 

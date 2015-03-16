@@ -233,7 +233,7 @@ class TestS5BaseProtocol(unittest.TestCase):
         while dec.hasMore():
             decrypted_data += dec.getDecrypted()
         self.assertEqual(hash, decrypted_data)
-        
+
 
 class TestProtocol(unittest.TestCase):
     TIME_OUT = 0.1

@@ -1,4 +1,4 @@
-""" 
+"""
     Wrapper arround compression functions
 """
 

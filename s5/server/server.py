@@ -1218,7 +1218,7 @@ class ServerDataBase(util.CommonDatabase):
         token"""
         cur = self.db.cursor()
         with self.db:
-            cur.execute(""" 
+            cur.execute("""
                 INSERT INTO token
                     (token, email)
                 VALUES
@@ -1235,8 +1235,8 @@ class ServerDataBase(util.CommonDatabase):
                 return False, None
             assert len(email) == 1
             email = email[0]['email']
-            cur.execute(""" 
-                INSERT INTO account 
+            cur.execute("""
+                INSERT INTO account
                     (fingerprint, email)
                 VALUES
                     ( ?, ?) """,

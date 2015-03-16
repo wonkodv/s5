@@ -64,7 +64,7 @@ class ClientProtocol(messaging.S5BaseProtocol):
             raise Exception("ServerKeyMissmatch")
 
         cs = m.getSelectedCipherSuite()
-        
+
         # agree upon cipher suite, server choses
         if cs not in cipher_suites:
             raise CorruptMessage("Unknown CipherSuite ", cs)

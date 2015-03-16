@@ -1,6 +1,6 @@
 #!/usr/bin/python3 -Bbb
 
-""" 
+"""
     Test script for all s5 unit tests
 """
 

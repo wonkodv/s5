@@ -1,6 +1,6 @@
-""" 
+"""
     Callbacks for the client when information is needed, the user has to decide
-    something. Collection of all callbacks in all Client-Mixins 
+    something. Collection of all callbacks in all Client-Mixins
 """
 
 from pathlib import Path

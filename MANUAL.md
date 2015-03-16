@@ -24,7 +24,7 @@ work with the following Linux distributions:
 * Ubuntu 14.04
 * Debian 7.7 (wheezy) with Python packages from `testing`
 
- The `pycrypto` package can be installed from the Python Package Index using `pip`, or with 
+ The `pycrypto` package can be installed from the Python Package Index using `pip`, or with
 `apt-get install python3-crypto` on Debian and Ubuntu and `pacman -S
 python-crypto` on Arch.
 
@@ -38,8 +38,8 @@ The distributed **S5** tar ball should contain the following files and directori
 
 To execute client or server, Python has to be called in the correct version,
 with a variable pointing at the location of the code and the module to execute.
-For example the client is started with 
-    
+For example the client is started with
+
     PYTHONPATH=/path/To/implementation python3.4 -m s5.client
 
 For easier shell access, the `Makefile` can be used to create two
@@ -140,7 +140,7 @@ to do anything, except sending tokens.
 To become a registered user, the server operator has to create a
 token for the user, which the user has to submit using his user key. The user's
 key will then be tied to that account. A token is created with:
-    
+
 * `s5server --data DATA create-token USER`
 
 The value passed as `USER` is only seen by the server operator. It could, for
@@ -156,10 +156,10 @@ Clients verify the server by the server's key fingerprint. The method with
 which that fingerprint is computed can be defined by the client. Therefore, there
 is no one fingerprint for a server key, instead it depends on the hash method
 used.
-With 
+With
 
 * `s5server --data DATA fingerprint [HASH]`
-    
+
 the fingerprint of the server key is printed using `HASH` or, if no method is
 passed, all hash methods known to the server. The client uses `sha384` by
 default.
@@ -244,18 +244,18 @@ Same as the server, the client has to be initialized before first use:
     the same user, which allows users to access items from several devices.
 
 *    `s5 core upgrade`
-    
+
     After updating the software to a newer version, the data directory may need
     to be upgraded.
 
 *    `s5 core export-key`
-        
+
     Exports the user key. It will be encrypted with a generated password and
     stored in a file, filename and password are printed to standard out.
      Copy that file to other devices and run `s5 core init
-    --key KEY` there. 
+    --key KEY` there.
 
-*  `s5 core set-root-id ID` 
+*  `s5 core set-root-id ID`
 
     When using the same key on more than one device, you can set up the same item as
     root of the catalog on all devices. Thereby, the complete item tree can be
@@ -263,7 +263,7 @@ Same as the server, the client has to be initialized before first use:
     phones, it might be better to have a different item as root, possibly a sub
     item of another device's catalog, that contains only those items that you
     want to have on that device.
-    
+
 
 		## On device A
 		# synchronize the complete item catalog to a server
@@ -287,9 +287,9 @@ Same as the server, the client has to be initialized before first use:
 		s5 sync pull --recursive --server SERVER /
 
 		# securely delete the .S5Key files on both devices
-    
+
 * ` s5 core list-crypto`
-    
+
     Prints the list of all available cryptographic algorithms, using the names
     that can be used in the configuration file.
 
@@ -406,14 +406,14 @@ To inspect an item or a tree of items the following commands can be used:
 
 * `s5 item inspect [--meta] [--hex] [--json] [--dump] [--sync] [--share] ITEM`
 
-    Gets information about an item. 
+    Gets information about an item.
 
     `--meta` shows meta data like encryption algorithm, size of compressed and
     encrypted content, etc.
 
     `--hex` prints a hexadecimal representation of the content, similar as
     piping it to `xxd`.
-            
+
     `--json` pretty prints the content of items containing only JSON data.
 
     `--dump` same as `s5 item dump`.
@@ -500,8 +500,8 @@ is specified when the server is added.
 These commands are used to manage servers:
 
 * `s5 server add NAME HOST PORT [-m FPM] [-p FP] [-f]`
-    
-    Adds a server to the list of known servers. 
+
+    Adds a server to the list of known servers.
     `NAME` is the name by which the server can be referred
     to in other commands. `HOST` can be an IP (v4 or v6) address, a computer name or a
     domain name. `PORT` is the TCP port that the server accepts connections on.
@@ -540,7 +540,7 @@ These commands are used to manage servers:
     Connects to the server, sends a ping, waits for the reply and prints the round
     trip time, as well as the total time for establishing a secure connection.
     Due to the dynamic runtime behaviour of Python, the measured values will be
-    rather high and scatter considerably. 
+    rather high and scatter considerably.
 
 ### Sync
 
@@ -609,7 +609,7 @@ These commands are used to manage servers:
 		s5 sync push shared  # fails because of a conflict in item A09C...
 		s5 item inspect --json A09C > /tmp/A09CDump
 		s5 sync pull -s Daves-server -f A09C
-		s5 edit --json --editor "vimdiff /tmp/A09CDump " A09C 
+		s5 edit --json --editor "vimdiff /tmp/A09CDump " A09C
 		s5 sync push shared # succeeds
 
 ### Share
@@ -618,7 +618,7 @@ These commands are used to manage servers:
 * `s5 share list [-s SERVER] [--name NAME]`
 
     Lists all share groups that the user is a member of on all known servers.
-    
+
     With `--server`, only groups on `SERVER` will be listed.
 
     Only groups with the given name will be listed with the `--name` parameter.
@@ -630,7 +630,7 @@ These commands are used to manage servers:
     with all permissions and become the owner. There can only be one group with
     the same name per owner.
 
-* `s5 share add-user -s SERVER [--temp-key] [--from-share FROM_SHARE] 
+* `s5 share add-user -s SERVER [--temp-key] [--from-share FROM_SHARE]
     GROUP USER PERMISSIONS+`
 
     This command will add a user to a group on `SERVER`.
@@ -662,7 +662,7 @@ These commands are used to manage servers:
     share group inheritance conflict. In
     such a case, the new member already has links to the items that he can access
     with the new membership.
-    
+
     In all other cases specify `--temp-key`. A temporary key will be generated and
     registered on the server as the new group member's key.  A `.S5Member` file
     will be created which contains the key, the address and the fingerprint of the
@@ -687,7 +687,7 @@ These commands are used to manage servers:
 		Password: 1nbpdS8o+W
 
 * `s5 share become-member PATH IMPORT-PASSWORD ITEM`
-    
+
     When someone added you to a share group on a server and sends you a
     `.S5Member` file, this command replaces the temporary key he created for you with
     your own, so you become a member of that group.
@@ -712,7 +712,7 @@ These commands are used to manage servers:
 		Name for server s5.dave.example.org:8091: daves-server
 		Your Email Address in Shares: charlie@example.com
 		s5 sync pull -s daves-server shared/knitting-club -d 1
-    
+
 * `s5 share change-user-permissions -s SERVER GROUP USER PERMISSIONS+`
 
     Changes the permissions of a user in a group on a server.
@@ -735,7 +735,7 @@ These commands are used to manage servers:
 To add directories and files to the item catalog, use:
 
 *   `s5 files to-catalog [-u] [-p] ITEMPATH FILEPATH`
-    
+
     If `FILEPATH` points at a file, a `FILE` item will be created at `ITEMPATH`,
     using the mime type that is guessed by the files extension, and the file
     content is stored in the item.

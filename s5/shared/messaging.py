@@ -188,7 +188,7 @@ MessageParams = (
         "CSendToken",
         """ The client sends a token that the server can use to map the
             client's public key to an account that the server uses to manage
-            the user base. 
+            the user base.
         """,
         (
             (
@@ -1236,7 +1236,7 @@ class S5BaseProtocol:
 
         if self.secured:
             self.in_hasher.update(b)
-        
+
         return b
 
     def _send(self, b):
@@ -1268,7 +1268,7 @@ class S5BaseProtocol:
             raise NetworkError("invalid header: %s" % s)
         return typ, length
 
-    
+
 
     def _receiveVerification(self):
         """ Receive a verification Frame and test if the hash over the bytes
@@ -1301,7 +1301,7 @@ class S5BaseProtocol:
             raise CorruptMessage("Verification Hashes do not match", b,h)
 
     def _sendVerification(self):
-        """     
+        """
             Send a verification Frame with a hash over al bytes previously
             sent.
         """

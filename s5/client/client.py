@@ -328,7 +328,7 @@ class S5Client:
             return itm
 
     def newItem(self, contentType):
-        """ Make a new item. Will have no content. 
+        """ Make a new item. Will have no content.
         the accessor to the new item is returned."""
         self._selfCheck()
 

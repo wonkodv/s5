@@ -1,4 +1,4 @@
-""" 
+"""
     Various methods to convert between objects, bytes and strings
 """
 

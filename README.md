@@ -35,6 +35,6 @@ manufacturer or the vendor.
 increases the availability in case of a server failure, and to work with
 different groups of people that use different servers.
 
-Server and Client are written in Python, so they can 
-be used on Linux, Mac OS X, Windows and other platforms at some point in the 
+Server and Client are written in Python, so they can
+be used on Linux, Mac OS X, Windows and other platforms at some point in the
 future, currently only linux is supported.
